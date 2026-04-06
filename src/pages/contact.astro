@@ -4,13 +4,14 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Contact" description="Find Salty Papa's Shrimp House in Fort Myers, FL. Get directions, hours, and contact info.">
   <!-- Hero -->
-  <section class="bg-brand-navy py-24 md:py-32">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-      <p class="text-brand-gold text-sm tracking-[0.3em] uppercase font-bold mb-4 animate-fade-in">
-        Come Say Hello
-      </p>
-      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4 animate-fade-in">Contact Us</h1>
-      <p class="text-white/60 text-lg max-w-xl mx-auto animate-fade-in">
+  <section class="relative overflow-hidden bg-brand-navy">
+    <div class="absolute inset-0">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1920&q=80" alt="Restaurant interior" class="w-full h-full object-cover opacity-20" loading="eager" />
+    </div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center text-white">
+      <p class="text-brand-gold text-sm tracking-wider font-semibold mb-3 animate-fade-in">Come Say Hello</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-3 animate-fade-in">Contact Us</h1>
+      <p class="text-white/60 max-w-xl mx-auto animate-fade-in">
         We'd love to see you. Stop by, give us a call, or drop us a line.
       </p>
     </div>
