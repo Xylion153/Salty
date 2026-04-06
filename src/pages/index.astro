@@ -80,44 +80,60 @@ import Layout from '../layouts/Layout.astro';
         </div>
       </div>
 
-      <!-- Dish 2: Bayou Burger — right image -->
+      <!-- Dish 2: Bacon Wrapped Shrimp — right image -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
         <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
-          <img src="/Bayou-burger.png" alt="The Bayou Burger with onion rings and sweet potato fries" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
+          <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp with sweet potato fries and coleslaw" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
         </div>
         <div class="dish-slide-right md:order-1">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Crowd Pleaser</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">The Bayou Burger</h3>
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Fan Favorite</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Bacon Wrapped Shrimp</h3>
           <p class="text-gray-500 leading-relaxed text-sm">
-            Our 1/2 pound steak burger topped with homemade pimento cheese, fresh jalapenos, bacon,
-            and a stack of hand-breaded onion rings. This ain't fast food.
+            Two skewers of large sweet pink shrimp wrapped in slices of hickory smoked bacon,
+            brushed with sweet barbeque sauce. Served with sweet potato fries and creamy coleslaw.
+          </p>
+          <p class="text-brand-red font-display font-bold text-lg mt-3">$24.99</p>
+        </div>
+      </div>
+
+      <!-- Dish 3: Louisiana Gator Tail — left image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
+        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
+          <img src="/gatortail.png" alt="Louisiana Gator Tail with Cajun remoulade" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
+        </div>
+        <div class="dish-slide-right">
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Southern Classic</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Louisiana Gator Tail</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Bite-sized pieces of real gator marinated, lightly-floured and fried, served with our
+            Cajun remoulade. A true southern classic you won't find just anywhere.
           </p>
           <p class="text-brand-red font-display font-bold text-lg mt-3">$16.99</p>
         </div>
       </div>
 
-      <!-- Dish 3: Coconut Shrimp — left image -->
+      <!-- Dish 4: The Salty Papa Margarita — right image -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
-        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
-          <img src="/coconut-shrimp.png" alt="Coconut Fried Shrimp with dipping sauce" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
+        <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
+          <img src="/margarita.png" alt="The Salty Papa Margarita in a mason jar with lime and watermelon" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
         </div>
-        <div class="dish-slide-right">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Fan Favorite</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Coconut Fried Shrimp</h3>
+        <div class="dish-slide-right md:order-1">
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Signature Drink</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">The Salty Papa Margarita</h3>
           <p class="text-gray-500 leading-relaxed text-sm">
-            Large Gulf shrimp lightly floured and coated with shredded natural coconut, fried golden brown,
-            served with our homemade piña colada dipping sauce.
+            Premium tequila and orange liqueur blended with real lime, lemon, and orange juices.
+            On the rocks or frozen — traditional, strawberry, or mango. The perfect Gulf Coast sipper.
           </p>
-          <p class="text-brand-red font-display font-bold text-lg mt-3">$23.99</p>
+          <p class="text-brand-red font-display font-bold text-lg mt-3">$9.99</p>
         </div>
       </div>
 
-      <!-- Dish 4: Shrimp Po'Boy — right image -->
+      <!-- Dish 5: Shrimp Po'Boy — left image -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
+        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
           <img src="/poboy.png" alt="Jumbo Shrimp Po'Boy with hush puppies" class="w-full h-56 md:h-64 object-cover object-top" loading="lazy" />
         </div>
-        <div class="dish-slide-right md:order-1">
+        <div class="dish-slide-right">
           <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Classic</p>
           <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Jumbo Shrimp Po' Boy</h3>
           <p class="text-gray-500 leading-relaxed text-sm">
@@ -144,7 +160,7 @@ import Layout from '../layouts/Layout.astro';
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <a href="/menu#signature-shrimp-dishes" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-1">
           <div class="img-zoom h-52">
-            <img src="/shrimp-grits.png" alt="Fresh Gulf shrimp and grits" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-5">
             <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Fresh Gulf Seafood</h3>
@@ -156,29 +172,29 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </a>
 
-        <a href="/menu#chicken---beef-entrees" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-2">
+        <a href="/menu#papa-s-signature-drinks" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-2">
           <div class="img-zoom h-52">
-            <img src="/Bayou-burger.png" alt="The Bayou Burger" class="w-full h-full object-cover" loading="lazy" />
+            <img src="/margarita.png" alt="The Salty Papa Margarita" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Southern Comfort Food</h3>
+            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Signature Cocktails</h3>
             <p class="text-gray-500 text-sm leading-relaxed">
-              Shrimp &amp; grits, gumbo, jambalaya, fried green tomatoes, chicken &amp; waffles,
-              po' boys — food that makes you feel at home.
+              The Salty Papa Margarita, Snowbird frozen rum drinks, Blue Mermaid —
+              11 signature cocktails plus Wicked Dolphin rum and Cigar City craft beers.
             </p>
-            <span class="text-brand-red text-sm font-semibold mt-3 inline-block group-hover:translate-x-1 transition-transform">See menu &rarr;</span>
+            <span class="text-brand-red text-sm font-semibold mt-3 inline-block group-hover:translate-x-1 transition-transform">See drinks &rarr;</span>
           </div>
         </a>
 
-        <a href="/menu#po--boys---sandwiches" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-3">
+        <a href="/menu#homemade-appetizers" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-3">
           <div class="img-zoom h-52">
-            <img src="/poboy.png" alt="Shrimp Po'Boy" class="w-full h-full object-cover object-top" loading="lazy" />
+            <img src="/gatortail.png" alt="Louisiana Gator Tail" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Po' Boys &amp; Sandwiches</h3>
+            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Southern Starters</h3>
             <p class="text-gray-500 text-sm leading-relaxed">
-              Jumbo shrimp, oyster, chicken, and clam po' boys on fresh bakery rolls,
-              plus our famous Black Angus burgers and Bayou Burger.
+              Gator tail, fried green tomatoes, peel-n-eat shrimp, hush puppies, fresh oysters —
+              scratch-made appetizers you won't find anywhere else.
             </p>
             <span class="text-brand-red text-sm font-semibold mt-3 inline-block group-hover:translate-x-1 transition-transform">See menu &rarr;</span>
           </div>
@@ -220,13 +236,13 @@ import Layout from '../layouts/Layout.astro';
             <img src="/shrimp-grits.png" alt="Shrimp and Grits" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
           </div>
           <div class="rounded-xl overflow-hidden mt-6">
-            <img src="/coconut-shrimp.png" alt="Coconut Fried Shrimp" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
+            <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
           </div>
           <div class="rounded-xl overflow-hidden">
-            <img src="/poboy.png" alt="Shrimp Po'Boy" class="w-full h-40 md:h-52 object-cover object-top" loading="lazy" />
+            <img src="/margarita.png" alt="The Salty Papa Margarita" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
           </div>
           <div class="rounded-xl overflow-hidden mt-6">
-            <img src="/Bayou-burger.png" alt="Bayou Burger" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
+            <img src="/gatortail.png" alt="Louisiana Gator Tail" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
           </div>
         </div>
 
