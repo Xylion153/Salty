@@ -10,7 +10,7 @@
   }
 
   body {
-    @apply font-body text-gray-800 bg-white antialiased;
+    @apply font-body text-gray-700 bg-white antialiased;
   }
 
   h1, h2, h3, h4, h5 {
@@ -24,32 +24,28 @@
 
 @layer components {
   .btn-primary {
-    @apply inline-block bg-brand-red text-white font-bold px-7 py-3.5 rounded-lg
-           hover:bg-red-700 focus-visible:outline-brand-red
-           transition-colors duration-200 text-center uppercase tracking-wider text-sm;
+    @apply inline-block bg-brand-red text-white font-semibold px-6 py-3 rounded-lg
+           hover:bg-red-600 focus-visible:outline-brand-red
+           transition-colors duration-200 text-center text-sm;
   }
 
   .btn-outline {
-    @apply inline-block border-2 border-white text-white font-bold px-7 py-3.5 rounded-lg
+    @apply inline-block border-2 border-white text-white font-semibold px-6 py-3 rounded-lg
            hover:bg-white hover:text-brand-navy
-           transition-colors duration-200 text-center uppercase tracking-wider text-sm;
+           transition-colors duration-200 text-center text-sm;
   }
 
   .btn-gold {
-    @apply inline-block bg-brand-gold text-white font-bold px-7 py-3.5 rounded-lg
+    @apply inline-block bg-brand-gold text-white font-semibold px-6 py-3 rounded-lg
            hover:bg-yellow-600
-           transition-colors duration-200 text-center uppercase tracking-wider text-sm;
-  }
-
-  .section-heading {
-    @apply font-display text-3xl md:text-4xl font-bold text-brand-navy;
+           transition-colors duration-200 text-center text-sm;
   }
 
   /* Scroll animations — gentle */
   .animate-on-scroll {
     opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
   }
 
   .animate-on-scroll.is-visible {
@@ -58,13 +54,13 @@
   }
 
   .animate-on-scroll.delay-1 { transition-delay: 0.1s; }
-  .animate-on-scroll.delay-2 { transition-delay: 0.2s; }
-  .animate-on-scroll.delay-3 { transition-delay: 0.3s; }
-  .animate-on-scroll.delay-4 { transition-delay: 0.4s; }
+  .animate-on-scroll.delay-2 { transition-delay: 0.15s; }
+  .animate-on-scroll.delay-3 { transition-delay: 0.2s; }
+  .animate-on-scroll.delay-4 { transition-delay: 0.25s; }
 
   .animate-fade-in {
     opacity: 0;
-    transition: opacity 0.8s ease;
+    transition: opacity 0.6s ease;
   }
   .animate-fade-in.is-visible {
     opacity: 1;
@@ -81,17 +77,13 @@
     @apply scale-105;
   }
 
-  /* Gradient overlays */
+  /* Overlay */
   .overlay-dark {
-    background: linear-gradient(to bottom, rgba(26, 45, 61, 0.65), rgba(26, 45, 61, 0.8));
-  }
-
-  .overlay-dark-subtle {
-    background: linear-gradient(to bottom, rgba(26, 45, 61, 0.3), rgba(26, 45, 61, 0.65));
+    background: linear-gradient(to bottom, rgba(2, 34, 71, 0.6), rgba(2, 34, 71, 0.75));
   }
 
   /* Divider */
   .divider-gold {
-    @apply w-16 h-0.5 bg-brand-gold rounded-full;
+    @apply w-12 h-0.5 bg-brand-gold rounded-full;
   }
 }

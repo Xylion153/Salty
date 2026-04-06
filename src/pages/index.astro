@@ -3,103 +3,94 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Home">
-  <!-- Hero — simple and warm, not cinematic -->
-  <section class="relative overflow-hidden bg-brand-navy">
-    <div class="absolute inset-0">
-      <img
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
-        alt="Warm restaurant dining"
-        class="w-full h-full object-cover opacity-30"
-        loading="eager"
-      />
-    </div>
-    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-28 md:py-40 text-center text-white">
-      <!-- Logo spot -->
-      <div class="mb-8 animate-fade-in">
+  <!-- Hero -->
+  <section class="bg-brand-navy">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-32 text-center text-white">
+      <div class="mb-6 animate-fade-in">
         <img
           src="/logo.png"
           alt="Salty Papa's Shrimp House logo"
-          class="h-32 md:h-44 w-auto mx-auto drop-shadow-xl"
+          class="h-28 md:h-36 w-auto mx-auto"
           onerror="this.style.display='none'"
         />
       </div>
-      <h1 class="font-display text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4 animate-fade-in">
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-3 animate-fade-in">
         Salty Papa's Shrimp House
       </h1>
-      <p class="text-xl md:text-2xl text-brand-gold mb-3 animate-fade-in">
+      <p class="text-brand-gold text-lg md:text-xl mb-2 animate-fade-in">
         Where the Bayou Meets the Beach
       </p>
-      <p class="text-white/60 text-lg mb-10 animate-fade-in">
+      <p class="text-white/50 mb-8 animate-fade-in">
         Fort Myers, Florida &bull; Open Daily 11am – 8:30pm
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-        <a href="/menu" class="btn-primary text-base px-10 py-4">See Our Menu</a>
-        <a href="tel:+12394827272" class="btn-outline text-base px-10 py-4">Call (239) 482-7272</a>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center animate-fade-in">
+        <a href="/menu" class="btn-primary">See Our Menu</a>
+        <a href="tel:+12394827272" class="btn-outline">Call (239) 482-7272</a>
       </div>
     </div>
   </section>
 
-  <!-- Welcome — conversational, not corporate -->
-  <section class="bg-brand-cream py-16 md:py-24">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-display text-3xl md:text-4xl font-bold text-brand-navy mb-6 animate-on-scroll">
+  <!-- Welcome -->
+  <section class="bg-brand-cream py-14 md:py-20">
+    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mb-5 animate-on-scroll">
         Come On In, Y'all
       </h2>
-      <p class="text-gray-600 text-lg leading-relaxed mb-5 animate-on-scroll">
+      <p class="text-gray-600 leading-relaxed mb-4 animate-on-scroll">
         Everything on our menu is sourced from Florida and the South and made from scratch
         right here in our kitchen. Our two amazing chefs bring you the rich, spicy flavors of the
         bayou alongside the fresh, light tastes of the Gulf Coast.
       </p>
-      <p class="text-gray-600 text-lg leading-relaxed animate-on-scroll">
+      <p class="text-gray-600 leading-relaxed animate-on-scroll">
         We're a neighborhood spot — come as you are, bring the family (and the dog!),
-        and enjoy yourself for a spell. We want you to feel right at home.
+        and enjoy yourself for a spell.
       </p>
     </div>
   </section>
 
-  <!-- What We're Known For — simple cards, not fancy -->
-  <section class="py-16 md:py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12 animate-on-scroll">
+  <!-- What We're Known For -->
+  <section class="py-14 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy text-center mb-10 animate-on-scroll">
         What We're Known For
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="rounded-xl overflow-hidden shadow-md bg-white animate-on-scroll delay-1">
-          <div class="img-zoom h-52">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="rounded-lg overflow-hidden shadow bg-white animate-on-scroll delay-1">
+          <div class="img-zoom h-48">
             <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=600&q=80" alt="Fresh Gulf shrimp" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Fresh Gulf Seafood</h3>
+            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5">Fresh Gulf Seafood</h3>
             <p class="text-gray-500 text-sm leading-relaxed">
-              Real USA wild-caught "Pink Gold" shrimp, plus grouper, oysters, stone crab, and
-              today's catch — straight from Florida, Texas, and Louisiana fishermen. Never imported.
+              Real USA wild-caught shrimp, grouper, oysters, stone crab, and today's catch —
+              straight from Florida, Texas, and Louisiana fishermen. Never imported.
             </p>
           </div>
         </div>
 
-        <div class="rounded-xl overflow-hidden shadow-md bg-white animate-on-scroll delay-2">
-          <div class="img-zoom h-52">
+        <div class="rounded-lg overflow-hidden shadow bg-white animate-on-scroll delay-2">
+          <div class="img-zoom h-48">
             <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=600&q=80" alt="Southern comfort food" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Southern Comfort Food</h3>
+            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5">Southern Comfort Food</h3>
             <p class="text-gray-500 text-sm leading-relaxed">
               Shrimp &amp; grits, gumbo, jambalaya, fried green tomatoes, chicken &amp; waffles,
-              po' boys — the kind of food that makes you feel at home.
+              po' boys — food that makes you feel at home.
             </p>
           </div>
         </div>
 
-        <div class="rounded-xl overflow-hidden shadow-md bg-white animate-on-scroll delay-3">
-          <div class="img-zoom h-52">
+        <div class="rounded-lg overflow-hidden shadow bg-white animate-on-scroll delay-3">
+          <div class="img-zoom h-48">
             <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=600&q=80" alt="Tropical drinks" class="w-full h-full object-cover" loading="lazy" />
           </div>
           <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Local Drinks & Craft Beer</h3>
+            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5">Local Drinks &amp; Craft Beer</h3>
             <p class="text-gray-500 text-sm leading-relaxed">
               Wicked Dolphin rum from Cape Coral, Cigar City brews from Tampa,
-              11 signature cocktails, fresh-squeezed lemonades, and sangrias.
+              11 signature cocktails, and fresh-squeezed lemonades.
             </p>
           </div>
         </div>
@@ -107,76 +98,76 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Quick highlights — casual list, not fancy icons -->
-  <section class="bg-brand-navy text-white py-14">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+  <!-- Quick stats -->
+  <section class="bg-brand-blue text-white py-10">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         <div class="animate-on-scroll delay-1">
-          <p class="text-brand-gold font-display text-2xl font-bold">100%</p>
-          <p class="text-white/60 text-sm mt-1">Scratch-Made</p>
+          <p class="font-display text-xl font-bold">100%</p>
+          <p class="text-white/60 text-xs mt-0.5">Scratch-Made</p>
         </div>
         <div class="animate-on-scroll delay-2">
-          <p class="text-brand-gold font-display text-2xl font-bold">GF Fryers</p>
-          <p class="text-white/60 text-sm mt-1">Allergy Friendly</p>
+          <p class="font-display text-xl font-bold">GF Fryers</p>
+          <p class="text-white/60 text-xs mt-0.5">Allergy Friendly</p>
         </div>
         <div class="animate-on-scroll delay-3">
-          <p class="text-brand-gold font-display text-2xl font-bold">Dog Menu</p>
-          <p class="text-white/60 text-sm mt-1">Pet-Friendly Patio</p>
+          <p class="font-display text-xl font-bold">Dog Menu</p>
+          <p class="text-white/60 text-xs mt-0.5">Pet-Friendly Patio</p>
         </div>
         <div class="animate-on-scroll delay-4">
-          <p class="text-brand-gold font-display text-2xl font-bold">5 Stars</p>
-          <p class="text-white/60 text-sm mt-1">Yelp &bull; TripAdvisor</p>
+          <p class="font-display text-xl font-bold">5 Stars</p>
+          <p class="text-white/60 text-xs mt-0.5">Yelp &bull; TripAdvisor</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Photos + why people come back -->
-  <section class="py-16 md:py-24 bg-brand-cream">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <section class="py-14 md:py-20 bg-brand-cream">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="grid grid-cols-2 gap-3 animate-on-scroll">
-          <div class="rounded-xl overflow-hidden shadow-md">
-            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&q=80" alt="Chef preparing food" class="w-full h-44 md:h-56 object-cover" loading="lazy" />
+          <div class="rounded-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&q=80" alt="Chef preparing food" class="w-full h-40 md:h-48 object-cover" loading="lazy" />
           </div>
-          <div class="rounded-xl overflow-hidden shadow-md mt-6">
-            <img src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=400&q=80" alt="Seafood platter" class="w-full h-44 md:h-56 object-cover" loading="lazy" />
+          <div class="rounded-lg overflow-hidden mt-5">
+            <img src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=400&q=80" alt="Seafood platter" class="w-full h-40 md:h-48 object-cover" loading="lazy" />
           </div>
-          <div class="rounded-xl overflow-hidden shadow-md">
-            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80" alt="Dog on patio" class="w-full h-44 md:h-56 object-cover" loading="lazy" />
+          <div class="rounded-lg overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80" alt="Dog on patio" class="w-full h-40 md:h-48 object-cover" loading="lazy" />
           </div>
-          <div class="rounded-xl overflow-hidden shadow-md mt-6">
-            <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=400&q=80" alt="Patio dining" class="w-full h-44 md:h-56 object-cover" loading="lazy" />
+          <div class="rounded-lg overflow-hidden mt-5">
+            <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=400&q=80" alt="Patio dining" class="w-full h-40 md:h-48 object-cover" loading="lazy" />
           </div>
         </div>
 
         <div class="animate-on-scroll">
-          <h2 class="font-display text-3xl md:text-4xl font-bold text-brand-navy mb-6">
+          <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mb-5">
             Why Folks Keep Coming Back
           </h2>
-          <ul class="space-y-4 text-gray-600">
-            <li class="flex gap-3 items-start">
-              <span class="text-brand-red font-bold text-lg mt-0.5">&#10003;</span>
+          <ul class="space-y-3 text-gray-600 text-sm">
+            <li class="flex gap-2.5 items-start">
+              <span class="text-brand-red mt-0.5">&#10003;</span>
               <span><strong>Allergy friendly</strong> — dedicated gluten-free fryers, staff trained on every ingredient</span>
             </li>
-            <li class="flex gap-3 items-start">
-              <span class="text-brand-red font-bold text-lg mt-0.5">&#10003;</span>
-              <span><strong>Pet-friendly courtyard</strong> — bring the pup, we have a Pupper Meals menu for them too</span>
+            <li class="flex gap-2.5 items-start">
+              <span class="text-brand-red mt-0.5">&#10003;</span>
+              <span><strong>Pet-friendly courtyard</strong> — bring the pup, we have a Pupper Meals menu for them</span>
             </li>
-            <li class="flex gap-3 items-start">
-              <span class="text-brand-red font-bold text-lg mt-0.5">&#10003;</span>
+            <li class="flex gap-2.5 items-start">
+              <span class="text-brand-red mt-0.5">&#10003;</span>
               <span><strong>Everything homemade</strong> — sauces, dressings, soups, desserts, all from scratch daily</span>
             </li>
-            <li class="flex gap-3 items-start">
-              <span class="text-brand-red font-bold text-lg mt-0.5">&#10003;</span>
-              <span><strong>Never imported seafood</strong> — only USA-sourced from Gulf fishermen in FL, TX, and LA</span>
+            <li class="flex gap-2.5 items-start">
+              <span class="text-brand-red mt-0.5">&#10003;</span>
+              <span><strong>Never imported seafood</strong> — only USA-sourced from Gulf fishermen</span>
             </li>
-            <li class="flex gap-3 items-start">
-              <span class="text-brand-red font-bold text-lg mt-0.5">&#10003;</span>
-              <span><strong>Owner always on-site</strong> — any special request, any concern, handled on the spot</span>
+            <li class="flex gap-2.5 items-start">
+              <span class="text-brand-red mt-0.5">&#10003;</span>
+              <span><strong>Owner always on-site</strong> — any request or concern, handled on the spot</span>
             </li>
           </ul>
-          <a href="/about" class="inline-block mt-6 text-brand-red font-bold hover:text-red-700 transition-colors">
+          <a href="/about" class="inline-block mt-5 text-brand-red font-semibold text-sm hover:text-red-700 transition-colors">
             Read our story &rarr;
           </a>
         </div>
@@ -184,70 +175,67 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Reviews — kept simple -->
-  <section class="bg-white py-16 md:py-24">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12 animate-on-scroll">
+  <!-- Reviews -->
+  <section class="bg-white py-14 md:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy text-center mb-10 animate-on-scroll">
         What People Are Saying
       </h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-brand-cream rounded-xl p-6 animate-on-scroll delay-1">
-          <div class="flex gap-0.5 mb-3 text-yellow-500">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div class="bg-brand-cream rounded-lg p-5 animate-on-scroll delay-1">
+          <div class="flex gap-0.5 mb-2 text-yellow-500 text-sm">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
-          <p class="text-gray-600 leading-relaxed mb-4 italic text-sm">
-            "Best shrimp &amp; grits I've ever had outside of New Orleans. This place is a hidden gem on McGregor!"
+          <p class="text-gray-600 leading-relaxed mb-3 italic text-sm">
+            "Best shrimp &amp; grits I've ever had outside of New Orleans. Hidden gem on McGregor!"
           </p>
-          <p class="text-sm font-bold text-brand-navy">Mike R. <span class="font-normal text-gray-400">— Yelp</span></p>
+          <p class="text-xs font-semibold text-brand-navy">Mike R. <span class="font-normal text-gray-400">— Yelp</span></p>
         </div>
 
-        <div class="bg-brand-cream rounded-xl p-6 animate-on-scroll delay-2">
-          <div class="flex gap-0.5 mb-3 text-yellow-500">
+        <div class="bg-brand-cream rounded-lg p-5 animate-on-scroll delay-2">
+          <div class="flex gap-0.5 mb-2 text-yellow-500 text-sm">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
-          <p class="text-gray-600 leading-relaxed mb-4 italic text-sm">
-            "Finally a seafood place that takes allergies seriously! My daughter with celiac could eat safely. We'll be regulars."
+          <p class="text-gray-600 leading-relaxed mb-3 italic text-sm">
+            "Finally a seafood place that takes allergies seriously! My daughter with celiac could eat safely."
           </p>
-          <p class="text-sm font-bold text-brand-navy">Sarah T. <span class="font-normal text-gray-400">— Google</span></p>
+          <p class="text-xs font-semibold text-brand-navy">Sarah T. <span class="font-normal text-gray-400">— Google</span></p>
         </div>
 
-        <div class="bg-brand-cream rounded-xl p-6 animate-on-scroll delay-3">
-          <div class="flex gap-0.5 mb-3 text-yellow-500">
+        <div class="bg-brand-cream rounded-lg p-5 animate-on-scroll delay-3">
+          <div class="flex gap-0.5 mb-2 text-yellow-500 text-sm">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
-          <p class="text-gray-600 leading-relaxed mb-4 italic text-sm">
-            "The rum punch alone is worth the trip. Great food, awesome vibe, and they let us bring our dog on the patio."
+          <p class="text-gray-600 leading-relaxed mb-3 italic text-sm">
+            "The rum punch alone is worth the trip. Great food, and they let us bring our dog on the patio."
           </p>
-          <p class="text-sm font-bold text-brand-navy">James L. <span class="font-normal text-gray-400">— TripAdvisor</span></p>
+          <p class="text-xs font-semibold text-brand-navy">James L. <span class="font-normal text-gray-400">— TripAdvisor</span></p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Visit us — straightforward -->
-  <section class="bg-brand-warm py-16 md:py-20">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+  <!-- Visit us -->
+  <section class="bg-brand-cream py-14">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
         <div class="animate-on-scroll">
-          <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Hours</h3>
-          <p class="text-gray-600">Open Daily</p>
-          <p class="text-gray-800 font-semibold text-lg">11:00am – 8:30pm</p>
+          <h3 class="font-display text-base font-bold text-brand-navy mb-1">Hours</h3>
+          <p class="text-gray-600 text-sm">Open Daily</p>
+          <p class="text-gray-800 font-semibold">11:00am – 8:30pm</p>
         </div>
         <div class="animate-on-scroll">
-          <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Location</h3>
-          <p class="text-gray-600">15271 McGregor Blvd, Suite 1</p>
-          <p class="text-gray-600">Fort Myers, FL 33908</p>
+          <h3 class="font-display text-base font-bold text-brand-navy mb-1">Location</h3>
+          <p class="text-gray-600 text-sm">15271 McGregor Blvd, Suite 1</p>
+          <p class="text-gray-600 text-sm">Fort Myers, FL 33908</p>
         </div>
         <div class="animate-on-scroll">
-          <h3 class="font-display text-lg font-bold text-brand-navy mb-2">Phone</h3>
-          <a href="tel:+12394827272" class="text-brand-blue font-semibold text-lg hover:text-brand-red transition-colors">(239) 482-7272</a>
-          <p class="text-gray-500 text-sm mt-1">
-            <a href="mailto:info@SaltyPapasShrimpHouse.com" class="hover:text-brand-red transition-colors">info@SaltyPapasShrimpHouse.com</a>
-          </p>
+          <h3 class="font-display text-base font-bold text-brand-navy mb-1">Phone</h3>
+          <a href="tel:+12394827272" class="text-brand-blue font-semibold hover:text-brand-red transition-colors">(239) 482-7272</a>
         </div>
       </div>
-      <div class="text-center mt-10 animate-on-scroll">
+      <div class="text-center mt-8 animate-on-scroll">
         <a href="/contact" class="btn-primary">Get Directions</a>
       </div>
     </div>
