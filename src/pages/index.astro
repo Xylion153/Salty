@@ -38,24 +38,6 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Food photos strip -->
-  <section class="bg-white py-0">
-    <div class="grid grid-cols-4 md:grid-cols-4">
-      <div class="img-zoom h-24 md:h-36">
-        <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=480&q=80" alt="Gulf shrimp" class="w-full h-full object-cover" loading="lazy" />
-      </div>
-      <div class="img-zoom h-24 md:h-36">
-        <img src="https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=480&q=80" alt="Southern food" class="w-full h-full object-cover" loading="lazy" />
-      </div>
-      <div class="img-zoom h-24 md:h-36">
-        <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=480&q=80" alt="Cocktails" class="w-full h-full object-cover" loading="lazy" />
-      </div>
-      <div class="img-zoom h-24 md:h-36">
-        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=480&q=80" alt="Burger" class="w-full h-full object-cover" loading="lazy" />
-      </div>
-    </div>
-  </section>
-
   <!-- Welcome -->
   <section class="bg-brand-cream py-16 md:py-20">
     <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -72,6 +54,83 @@ import Layout from '../layouts/Layout.astro';
         and enjoy yourself for a spell.
       </p>
       <div class="divider-gold mx-auto mt-6 animate-on-scroll"></div>
+    </div>
+  </section>
+
+  <!-- Fan Favorites — dishes that pop in as you scroll -->
+  <section class="py-16 md:py-20 bg-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy text-center mb-12 animate-on-scroll">
+        Fan Favorites
+      </h2>
+
+      <!-- Dish 1: left image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
+        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
+          <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=700&q=80" alt="Shrimp and Grits" class="w-full h-56 md:h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="dish-slide-right">
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Signature Dish</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Papa's Famous Shrimp &amp; Grits</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Creamy cheddar cheese grits topped with sautéed pink Gulf shrimp, spicy andouille sausage,
+            white wine, peppers, and our signature Low Country seasonings. The dish that put us on the map.
+          </p>
+          <p class="text-brand-red font-display font-bold text-lg mt-3">$24.99</p>
+        </div>
+      </div>
+
+      <!-- Dish 2: right image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
+        <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700&q=80" alt="Black Angus Burger" class="w-full h-56 md:h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="dish-slide-right md:order-1">
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Crowd Pleaser</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Black Angus Steak Burger</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            No wimpy fast food patty! A thick 1/2 pound of fresh beef, grilled to order on bakery brioche
+            with lettuce, tomato, pickles, and red onion. Even a simple lunch tastes great here.
+          </p>
+          <p class="text-brand-red font-display font-bold text-lg mt-3">$14.99</p>
+        </div>
+      </div>
+
+      <!-- Dish 3: left image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
+        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
+          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=700&q=80" alt="Salty Papa Margarita" class="w-full h-56 md:h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="dish-slide-right">
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Signature Drink</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">The Salty Papa Margarita</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Premium tequila and orange liqueur blended with real lime, lemon, and orange juices.
+            On the rocks or frozen — traditional, strawberry, or mango. The perfect Gulf Coast sipper.
+          </p>
+          <p class="text-brand-red font-display font-bold text-lg mt-3">$9.99</p>
+        </div>
+      </div>
+
+      <!-- Dish 4: right image -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
+          <img src="https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=700&q=80" alt="Cajun Calamari" class="w-full h-56 md:h-64 object-cover" loading="lazy" />
+        </div>
+        <div class="dish-slide-right md:order-1">
+          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Starter</p>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Louisiana Gator Tail</h3>
+          <p class="text-gray-500 leading-relaxed text-sm">
+            Bite-sized pieces of real gator marinated, lightly-floured and fried, served with our
+            Cajun remoulade. A southern classic you won't find just anywhere.
+          </p>
+          <p class="text-brand-red font-display font-bold text-lg mt-3">$16.99</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-12 animate-on-scroll">
+        <a href="/menu" class="btn-primary px-8 py-3.5">See Full Menu</a>
+      </div>
     </div>
   </section>
 
