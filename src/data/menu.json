@@ -1,138 +1,425 @@
 {
   "categories": [
     {
-      "name": "Starters",
-      "description": "Kick things off with a taste of the Gulf",
+      "name": "Homemade Appetizers",
+      "description": "Scratch-made starters to kick off your meal",
+      "image": "https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=400&q=80",
       "items": [
         {
-          "name": "Cajun Calamari",
-          "description": "Crispy fried calamari tossed in Cajun spices, served with remoulade sauce",
-          "price": "14.99"
+          "name": "Farmer's Market Bread",
+          "description": "Fresh bakery baguette toasted with garlic butter, fresh tomatoes, parmesan, and blue cheese.",
+          "price": "8.99"
         },
         {
-          "name": "Jalapeño Poppers",
-          "description": "Stuffed with cream cheese and shrimp, breaded and fried golden",
-          "price": "12.99"
+          "name": "Shrimp Starters",
+          "description": "Lighter portions of our shrimp favorites and a side of sauce. Crispy Fried, Coconut Fried, or Grilled (GF).",
+          "price": "11.99"
         },
         {
-          "name": "Peel & Eat Shrimp",
-          "description": "Half pound of Gulf shrimp steamed in Old Bay, served with drawn butter",
+          "name": "Peel-n-Eat Shrimp",
+          "description": "Large, USA wild-caught pink Gulf shrimp steamed in the shell. Plain Hot or Chilled, Drunken Beer Butter, Spicy Cajun Butter, or Key Lime Sunset Butter. (GF)",
+          "price": "16.99 / 30.99",
+          "note": "1/2 Pound / Full Pound"
+        },
+        {
+          "name": "Louisiana Gator Tail",
+          "description": "Bite-sized pieces of real gator marinated, lightly-floured and fried, served with our Cajun remoulade.",
           "price": "16.99"
-        },
-        {
-          "name": "Stone Crab Claws",
-          "description": "Fresh Florida stone crab with mustard dipping sauce (seasonal)",
-          "price": "Market Price"
         },
         {
           "name": "Hush Puppies",
-          "description": "Golden cornmeal fritters with a hint of jalapeño, served with honey butter",
+          "description": "Sweet corn meal batter fried up crispy, served with a side of our homemade remoulade sauce or honey.",
+          "price": "7.99"
+        },
+        {
+          "name": "Fried Green Tomatoes",
+          "description": "Southern fried in seasoned flour, sprinkled with parmesan and bacon crumbles, served on fresh greens with homemade blue cheese dressing.",
           "price": "8.99"
+        },
+        {
+          "name": "Fresh Jumbo Chicken Wings",
+          "description": "6 or 12 fresh jumbo wings, naked fried crispy in a dedicated GF fryer, tossed in your choice of signature sauce. Served with celery and house ranch. (GF)",
+          "price": "10.99 / 20.99",
+          "note": "6 Wings / 12 Wings"
+        },
+        {
+          "name": "\"Boneless Wings\" Chicken Tenders",
+          "description": "Fresh white meat chunks, hand-breaded and fried when you order, tossed in one of our wing sauces. Served with celery and house ranch.",
+          "price": "14.99",
+          "note": "Ten Pieces"
+        },
+        {
+          "name": "Raw Oysters on the Half Shell",
+          "description": "Brought in fresh daily from the Gulf states, always hand-shucked when you order. With fresh lemon and cocktail sauce. (GF)",
+          "price": "11.99 / 20.99",
+          "note": "1/2 Dozen / Dozen"
+        },
+        {
+          "name": "Fresh Fried Gulf Oysters",
+          "description": "Fresh, never frozen, lightly floured and flash fried when you order, with homemade cocktail sauce.",
+          "price": "14.99"
+        },
+        {
+          "name": "Fried Pickle Chips",
+          "description": "An addictive southern treat! Dill chips tossed in seasoned flour, fried crispy, served with ranch dressing.",
+          "price": "7.99"
+        },
+        {
+          "name": "Calamari",
+          "description": "Wild-caught, USA harvest squid tubes and tentacles, cut in house, lightly floured and flash fried, with marinara.",
+          "price": "14.99"
+        },
+        {
+          "name": "Onion Rings",
+          "description": "Hand breaded in crunchy crumbs, fried golden brown, served with a side of our homemade ranch.",
+          "price": "7.99"
+        },
+        {
+          "name": "Southern Pimento Cheese Spread",
+          "description": "Our own recipe featuring cheddar, pimentos and a touch of onion and jalapeno, served with celery sticks and crusty bread slices.",
+          "price": "9.99"
         }
       ]
     },
     {
-      "name": "Po'Boys & Sandwiches",
-      "description": "Served on toasted French bread with fries or coleslaw",
+      "name": "Fresh Salads",
+      "description": "Homemade dressings: Ranch, Blue Cheese, Honey Mustard, Creamy Caesar, Herb Vinaigrette",
+      "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80",
       "items": [
         {
-          "name": "Shrimp Po'Boy",
-          "description": "Crispy fried Gulf shrimp, shredded lettuce, tomato, and remoulade",
+          "name": "Garden Salad",
+          "description": "Fresh chopped romaine, tomato wedges, red onion slices, shredded carrots, sliced cucumbers, and croutons. (GF without croutons)",
+          "price": "4.99 / 8.99",
+          "note": "Small / Large"
+        },
+        {
+          "name": "Caesar Salad",
+          "description": "Fresh chopped romaine tossed with shredded parmesan, croutons and creamy Caesar dressing, served with bakery garlic bread.",
+          "price": "5.99 / 10.99",
+          "note": "Small / Large w/ Garlic Bread"
+        },
+        {
+          "name": "Everglades Salad",
+          "description": "Homemade Cajun-spiced pecans, bacon crumbles, tomato wedges, sweet red onion, hearts of palm, and blue cheese on fresh romaine. (GF)",
+          "price": "12.99"
+        },
+        {
+          "name": "Southern Salad",
+          "description": "Sweet Florida strawberries and Georgia pecans over fresh romaine, with palm hearts, red onion, croutons, and goat cheese crumbles. (GF)",
+          "price": "12.99"
+        }
+      ]
+    },
+    {
+      "name": "From Scratch Soups",
+      "description": "Made fresh daily — add a side salad for $4.00",
+      "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&q=80",
+      "items": [
+        {
+          "name": "Southern Style Chowder",
+          "description": "Atlantic clams simmered in real cream and butter, with sweet corn, onions, bell peppers, potatoes, and bacon.",
+          "price": "5.99 / 8.99",
+          "note": "Cup / Bowl"
+        },
+        {
+          "name": "Salty Papa's Original Gumbo",
+          "description": "Andouille sausage and fresh chicken, with celery, onions, and green peppers in our spicy tomato stock thickened with filé and brown roux, topped with turmeric rice.",
+          "price": "5.99 / 8.99",
+          "note": "Cup / Bowl"
+        }
+      ]
+    },
+    {
+      "name": "Po' Boys & Sandwiches",
+      "description": "All selections include your choice of 2 side orders",
+      "image": "https://images.unsplash.com/photo-1553909489-cd47e0907980?w=400&q=80",
+      "items": [
+        {
+          "name": "Black Angus Steak Burger",
+          "description": "A thick 1/2 pound of fresh beef, grilled to order on bakery brioche bun with lettuce, tomato, pickles, red onion. (GF without bun)",
+          "price": "14.99"
+        },
+        {
+          "name": "Bayou Burger",
+          "description": "Our 1/2 pound steak burger topped with homemade pimento cheese, fresh jalapenos, bacon, and hand-breaded onion rings.",
           "price": "16.99"
         },
         {
-          "name": "Catfish Po'Boy",
-          "description": "Southern-fried catfish with pickles, slaw, and tartar sauce",
-          "price": "15.99"
+          "name": "Chicken Sammy",
+          "description": "Fresh, all-natural, boneless breast on brioche with lettuce, tomato, onion. Grilled (GF), Blackened (GF), Southern Fried, or Buffalo.",
+          "price": "13.99"
         },
         {
-          "name": "Grouper Sandwich",
-          "description": "Grilled or blackened Gulf grouper on a brioche bun with mango slaw",
-          "price": "18.99"
+          "name": "Atlantic Cod Sandwich",
+          "description": "Mild, flaky whitefish lightly fried in crispy crumbs on bakery brioche roll with lettuce, tomato, onion, pickles, and homemade tartar sauce.",
+          "price": "16.99"
         },
         {
-          "name": "Black Angus Burger",
-          "description": "Half-pound patty with cheddar, lettuce, tomato, and house-made pickles",
-          "price": "15.99"
-        }
-      ]
-    },
-    {
-      "name": "From the Gulf",
-      "description": "Fresh-caught favorites from Florida waters",
-      "items": [
-        {
-          "name": "Shrimp & Grits",
-          "description": "Sautéed Gulf shrimp over creamy stone-ground grits with andouille cream sauce",
-          "price": "22.99"
+          "name": "Jumbo Shrimp Po' Boy",
+          "description": "Fresh bakery long roll with crispy-fried Gulf shrimp, fully dressed with chopped lettuce, tomato and homemade Cajun remoulade.",
+          "price": "16.99"
         },
         {
-          "name": "Catch of the Day",
-          "description": "Fresh local fish, grilled or blackened, served with seasonal vegetables",
-          "price": "Market Price"
+          "name": "Chicken Breast Po' Boy",
+          "description": "Fresh bakery long roll with crispy-fried chicken breast, fully dressed with chopped lettuce, tomato and homemade Cajun remoulade.",
+          "price": "13.99"
         },
         {
-          "name": "Pan-Seared Scallops",
-          "description": "Jumbo sea scallops with brown butter, capers, and roasted fingerlings",
-          "price": "28.99"
+          "name": "Gulf Oyster Po' Boy",
+          "description": "Fresh bakery long roll with crispy-fried Gulf oysters, fully dressed with chopped lettuce, tomato and homemade Cajun remoulade.",
+          "price": "20.99"
         },
         {
-          "name": "Seafood Platter",
-          "description": "Fried shrimp, fish, calamari, and hush puppies with fries and coleslaw",
-          "price": "26.99"
-        },
-        {
-          "name": "Grilled Fish Tacos",
-          "description": "Three tacos with blackened fish, cabbage slaw, pico de gallo, and chipotle crema",
+          "name": "Clam Strip Po' Boy",
+          "description": "Fresh bakery long roll with crispy-fried clam strips, fully dressed with chopped lettuce, tomato and homemade Cajun remoulade.",
           "price": "17.99"
         }
       ]
     },
     {
-      "name": "Salads",
-      "description": "Fresh and light, perfect for a warm Florida day",
+      "name": "Chicken & Beef Entrees",
+      "description": "All choices include 2 side orders (unless noted)",
+      "image": "https://images.unsplash.com/photo-1598515214211-89d3c73ae83b?w=400&q=80",
       "items": [
         {
-          "name": "Gulf Shrimp Salad",
-          "description": "Grilled shrimp over mixed greens with avocado, mango, and citrus vinaigrette",
+          "name": "Southern Fried Chicken & Gravy",
+          "description": "Fresh, boneless breast dredged in seasoned flour, fried golden brown, smothered with from-scratch andouille sausage white gravy.",
+          "price": "17.99"
+        },
+        {
+          "name": "Key West Chicken Bowl",
+          "description": "Turmeric rice and black beans, topped with chicken breast sautéed in garlic-shallot butter, garnished with grilled corn relish, fresh tomatoes, red peppers, and green onions. Served with garlic bread. (GF)",
+          "price": "17.99"
+        },
+        {
+          "name": "Coconut Fried Chicken",
+          "description": "Fresh chicken breast floured and crusted with coconut shreds, fried golden brown, served with homemade piña colada sauce.",
+          "price": "17.99"
+        },
+        {
+          "name": "Chicken & Waffles",
+          "description": "Southern fried chicken breast stacked with fluffy waffles, topped with sweet potato fries and served with maple syrup.",
           "price": "18.99"
         },
         {
-          "name": "Caesar Salad",
-          "description": "Crisp romaine, house-made croutons, shaved parmesan, and classic dressing",
-          "price": "12.99"
+          "name": "Charleston Chicken & Grits",
+          "description": "Creamy cheddar cheese grits topped with sautéed chicken, spicy andouille sausage, white wine, peppers, and our signature Low Country seasonings. Regular or Extra Spicy Ghost Pepper. (GF)",
+          "price": "18.99"
         },
         {
-          "name": "Cobb Salad",
-          "description": "Mixed greens with grilled chicken, bacon, egg, avocado, and blue cheese",
-          "price": "16.99"
+          "name": "Cast Iron Chicken",
+          "description": "Fresh chicken breast sliced and sautéed in real butter with fresh tomatoes, shallots, garlic, and herbs, finished with white wine, served over rice or linguine with garlic bread. (GF over rice)",
+          "price": "17.99"
+        },
+        {
+          "name": "Petite Filet Mignons",
+          "description": "Eight ounces of choice tenderloin beef, brushed with garlic butter and grilled to order. (GF)",
+          "price": "30.99"
+        },
+        {
+          "name": "Steak & Shrimp Grill",
+          "description": "Our tender petite filets with a skewer of large shrimp added on the grill. (GF)",
+          "price": "36.99"
         }
       ]
     },
     {
-      "name": "Drinks",
-      "description": "Local craft beers, specialty cocktails, and more",
+      "name": "Signature Shrimp Dishes",
+      "description": "Proudly serving genuine USA \"Pink Gold\" wild-caught Gulf shrimp, never imported. All 1/2lb entrees include 2 side orders.",
+      "image": "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=400&q=80",
       "items": [
         {
-          "name": "Salty Papa's Rum Punch",
-          "description": "House specialty with local Florida rum, tropical juices, and a dark rum float",
-          "price": "12.00"
+          "name": "Papa's Famous Shrimp & Grits",
+          "description": "A big bowl of creamy cheddar cheese grits topped with sautéed pink Gulf shrimp, spicy andouille sausage, white wine, peppers, and our signature Low Country seasonings with garlic bread. Regular or Extra Spicy Ghost Pepper. (GF)",
+          "price": "24.99"
         },
         {
-          "name": "Tampa Craft Beer",
-          "description": "Rotating selection of local craft brews — ask your server for today's picks",
-          "price": "7.00"
+          "name": "Bacon Wrapped Shrimp",
+          "description": "Two skewers of large sweet pink shrimp wrapped in slices of hickory smoked bacon, brushed with sweet barbeque sauce. (GF)",
+          "price": "24.99"
         },
         {
-          "name": "Fresh Squeezed Lemonade",
-          "description": "House-made lemonade, available plain, strawberry, or mango",
-          "price": "5.00"
+          "name": "Coconut Fried Shrimp",
+          "description": "Large Gulf shrimp lightly floured and coated with shredded natural coconut then fried golden brown, with homemade piña colada dipping sauce.",
+          "price": "23.99"
         },
         {
-          "name": "Sweet Tea",
-          "description": "Southern-style sweet tea brewed fresh daily",
-          "price": "3.50"
+          "name": "City Creole Jambalaya",
+          "description": "Gulf shrimp, andouille sausage and chicken breast in a rich, spicy tomato stew with celery, peppers, onions, thickened with dark roux, topped with rice and garlic bread. Regular or Extra Spicy Ghost Pepper.",
+          "price": "24.99"
+        },
+        {
+          "name": "Fried Shrimp",
+          "description": "The classic featuring the highest quality \"pink gold\" shrimp tossed in crispy crunchy bread crumbs and fried to a golden brown, served with homemade cocktail sauce.",
+          "price": "22.99"
+        },
+        {
+          "name": "Naked Shrimp",
+          "description": "The famous taste of authentic Gulf pink shrimp, simply served with our homemade garlic butter. Your choice of grilled or sautéed. (GF)",
+          "price": "22.99"
+        },
+        {
+          "name": "Mango & Sweet Chili Grilled Shrimp",
+          "description": "Gulf shrimp skewers grilled and basted with a sweet chili sauce and real mango chunks. (GF)",
+          "price": "23.99"
+        },
+        {
+          "name": "Key West Shrimp Bowl",
+          "description": "Black beans, rice, corn relish with fresh tomatoes and onions, topped with Gulf shrimp sautéed in butter and fresh lime juice, with garlic bread. (GF)",
+          "price": "24.99"
+        },
+        {
+          "name": "Cast Iron Shrimp",
+          "description": "Gulf shrimp lightly sautéed in real butter with fresh tomatoes, shallots, garlic and herbs, finished with white wine, served over rice or linguine with garlic bread. (GF over rice)",
+          "price": "24.99"
         }
+      ]
+    },
+    {
+      "name": "Fresh Shellfish",
+      "description": "All entrees include your choice of 2 side orders",
+      "image": "https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=400&q=80",
+      "items": [
+        {
+          "name": "Gulf Oysters",
+          "description": "A half pound of large, plump \"select\" oysters brought in fresh daily from the Gulf states, never frozen, lightly dredged in seasoned flour and flash fried.",
+          "price": "25.99"
+        },
+        {
+          "name": "Atlantic Sea Scallops",
+          "description": "A generous portion of fresh, large, sweet sea scallops. Grilled (GF), Blackened (GF), Pan-Seared, or Fried.",
+          "price": "Market Price"
+        },
+        {
+          "name": "Clams",
+          "description": "Fresh Atlantic clam strips tossed in a light dusting of seasoned flour, then flash fried so they're crispy but tender.",
+          "price": "20.99"
+        },
+        {
+          "name": "Fried Combo Platter",
+          "description": "Choice of two selections of shrimp, cod, oysters, or clams hand-breaded when ordered and fried golden brown. Served with homemade tartar and cocktail sauces.",
+          "price": "24.99"
+        },
+        {
+          "name": "Snow Crab Legs",
+          "description": "Full pound of Alaskan/Canadian snow crab with drawn butter and lemon wedges. (GF)",
+          "price": "Market Price"
+        }
+      ]
+    },
+    {
+      "name": "Gulf & Atlantic Fish",
+      "description": "Fresh catch includes 2 side orders",
+      "image": "https://images.unsplash.com/photo-1580476262798-bddd9f4b7369?w=400&q=80",
+      "items": [
+        {
+          "name": "Atlantic Cod \"Fish & Chips\"",
+          "description": "A half pound of mild, flaky whitefish, cut in planks and tossed in crispy breadcrumbs then lightly fried, served with fries, coleslaw and tartar.",
+          "price": "19.99"
+        },
+        {
+          "name": "Fresh Catches of the Day",
+          "description": "Real Florida favorites such as Hogfish and Black Grouper, spear and line caught from Key West to the deep Gulf. Grilled (GF), Blackened (GF), Sautéed (GF), Broiled (GF), or Fried.",
+          "price": "Market Price"
+        },
+        {
+          "name": "Nawlins Style",
+          "description": "Your choice of Gulf fish blackened New Orleans style, topped with our homemade creamy Cajun pepper sauce.",
+          "price": "Market Price"
+        }
+      ]
+    },
+    {
+      "name": "Side Orders",
+      "description": "Each side $3.50",
+      "image": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80",
+      "items": [
+        { "name": "Creamy Coleslaw", "description": "Fresh cabbage with homemade sweet dressing. (GF)", "price": "3.50" },
+        { "name": "Hand-Cut Fries", "description": "Fresh cut daily, fried in a dedicated fryer. (GF)", "price": "3.50" },
+        { "name": "Baked Beans", "description": "Brown sugar, onions and bacon. (GF)", "price": "3.50" },
+        { "name": "Cheesy Grits", "description": "House recipe with butter and cheddar. (GF)", "price": "3.50" },
+        { "name": "Garlic Bread", "description": "Bakery ciabatta toasted with our recipe butter.", "price": "3.50" },
+        { "name": "Fresh Vegetable", "description": "Sautéed in our real garlic butter. (GF)", "price": "3.50" },
+        { "name": "Hush Puppies", "description": "Golden brown fried cornmeal balls.", "price": "3.50" },
+        { "name": "Black Beans & Rice", "description": "Our turmeric rice with seasoned beans. (GF)", "price": "3.50" },
+        { "name": "Sweet Potato Fries", "description": "Sweet and crispy, dedicated fryer. (GF)", "price": "3.50" },
+        { "name": "Mashed Potatoes", "description": "With real cream and butter (available 4pm). (GF)", "price": "3.50" }
+      ]
+    },
+    {
+      "name": "Kids' Meals",
+      "description": "12 & Under — a smaller portion plus choice of one side order",
+      "image": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?w=400&q=80",
+      "items": [
+        { "name": "Pink Gulf Shrimp", "description": "Grilled (GF) or crunchy fried.", "price": "8.99" },
+        { "name": "Fresh Chicken Tenders", "description": "Grilled (GF) or crunchy fried.", "price": "8.99" },
+        { "name": "Atlantic Cod", "description": "Mild whitefish plank, crunchy fried.", "price": "8.99" },
+        { "name": "Pasta Bowl", "description": "Linguine topped with marinara and parmesan.", "price": "8.99" },
+        { "name": "Hot Dog", "description": "Natural, uncured pure beef dog on toasted roll.", "price": "8.99" }
+      ]
+    },
+    {
+      "name": "Desserts & Ice Cream",
+      "description": "Homemade sweets to finish your meal",
+      "image": "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&q=80",
+      "items": [
+        {
+          "name": "Florida Key Lime Pie",
+          "description": "Big slice of our homemade pie with real Key West lime juice and heavy cream in a graham cracker crust, with fresh Florida strawberry drizzle and whipped cream.",
+          "price": "6.99",
+          "note": "Whole Pie $25.00 (pre-order)"
+        },
+        {
+          "name": "Mud Puppy",
+          "description": "Homemade peanut butter and cream cheese mousse with dark chocolate ganache fudge, served atop a gluten-free brownie with whipped cream and peanut butter cup crumbles. (GF)",
+          "price": "7.99"
+        },
+        {
+          "name": "Love Boat Ice Cream",
+          "description": "Four scoops of our favorite ice cream made locally in Fort Myers, topped with whipped cream. Flavors change daily.",
+          "price": "5.99"
+        }
+      ]
+    },
+    {
+      "name": "Beverages",
+      "description": "From fresh-squeezed to craft cocktails",
+      "image": "https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80",
+      "items": [
+        { "name": "Bottomless Soft Drinks & Tea", "description": "Coke, Diet Coke, Sprite, Root Beer, Mr. Pibb, Iced Tea, Sweet Tea, Coffee.", "price": "2.99" },
+        { "name": "Frozen Fruit Smoothies", "description": "All natural fruit purees frozen and topped with whipped cream and fruit. Piña Colada, Banana, Strawberry, or Mango.", "price": "3.99" },
+        { "name": "Domestic Draft Beer", "description": "Yuengling, Miller Lite, Michelob Ultra. Pints or Pitchers.", "price": "4.00 / 12.00" },
+        { "name": "Craft Draft Beer", "description": "Three craft choices daily — ask your server!", "price": "6.00 / 18.00" },
+        { "name": "Sangrias by the Pint", "description": "House wine, muddled fruit, sparkling water, juices and fruit cordials. White Peach Pinot or Cabernet Red Berry.", "price": "7.99" },
+        { "name": "House Wine by the Glass", "description": "Pinot Grigio, Chardonnay, White Zinfandel, Cabernet, Merlot.", "price": "5.00" }
+      ]
+    },
+    {
+      "name": "Papa's Signature Drinks",
+      "description": "Premium cocktails made with care — $9.99 each",
+      "image": "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=400&q=80",
+      "items": [
+        { "name": "The Salty Papa Margarita", "description": "Premium tequila and orange liqueur blended with real lime, lemon and orange juices. On the rocks or frozen. Traditional, Strawberry, or Mango.", "price": "9.99" },
+        { "name": "Kentucky Wildcat", "description": "Premium Kentucky bourbon paired with Ale-8 ginger ale, with fresh lime juice.", "price": "9.99" },
+        { "name": "Snowbirds Frozen Rum Drinks", "description": "All natural fruit purees, flavored rums, topped with a dark rum float, whipped cream and fruit. Piña Colada, Banana, Strawberry, or Mango.", "price": "9.99" },
+        { "name": "Sanibel Key Lime Pie Martini", "description": "Spiced rum and orange liqueur with lime juice and sweet cream. A favorite Florida dessert in a glass!", "price": "9.99" },
+        { "name": "Bayside Bloody Mary", "description": "Your choice of premium vodka mixed with our homemade bloody Mary mix.", "price": "9.99" },
+        { "name": "Blue Mermaid", "description": "Coconut rum and blue curaçao with coconut cream and pineapple juice, topped by fruit and dark rum float. Frozen or on the rocks.", "price": "9.99" },
+        { "name": "Dirty Arnold Palmer", "description": "Sweet tea vodka and lemonade, served frosty cold over ice with fresh lemon wedges.", "price": "9.99" },
+        { "name": "Southern Storm", "description": "Dark rum, Ale-8 ginger, lime, and a splash of sugar cane syrup.", "price": "9.99" },
+        { "name": "Bliss on the Beach", "description": "Premium vodka, peach schnapps, orange and cranberry juices on the rocks.", "price": "9.99" },
+        { "name": "Gator Bayou Water", "description": "Green melon and orange liqueurs, vodka and splashes of lemon and Sprite.", "price": "9.99" },
+        { "name": "Palm Tree Punch", "description": "Light and dark rums with orgeat and orange liqueur, lime and simple syrup. The perfect classic island drink!", "price": "9.99" }
+      ]
+    },
+    {
+      "name": "Papa's Pupper Meals",
+      "description": "Served on the patio for well-behaved, leashed furry friends — all pups get fresh ice water!",
+      "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80",
+      "items": [
+        { "name": "Small Pupper", "description": "Ground beef or cubed chicken breast sautéed with fresh vegetables or rice.", "price": "3.99" },
+        { "name": "Large Doggo", "description": "Ground beef or cubed chicken breast sautéed with fresh vegetables or rice.", "price": "5.99" },
+        { "name": "Puppuccino", "description": "Treat cup of whipped cream.", "price": "0.50" }
       ]
     }
   ]

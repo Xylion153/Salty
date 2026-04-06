@@ -18,13 +18,13 @@ import Layout from '../layouts/Layout.astro';
       <p class="text-brand-gold text-sm tracking-[0.4em] uppercase font-bold mb-6 animate-fade-in">Our Story</p>
       <h1 class="font-display text-5xl md:text-7xl font-black mb-6 animate-fade-in">About Us</h1>
       <p class="text-white/70 text-lg md:text-xl max-w-xl mx-auto animate-fade-in">
-        A love letter to Gulf Coast cuisine, built on decades of experience and the freshest ingredients.
+        Where the Bayou Meets the Beach... Everyday!
       </p>
     </div>
   </section>
 
-  <!-- Story -->
-  <section class="py-24 md:py-32 bg-white">
+  <!-- Their Story -->
+  <section class="py-24 md:py-32 bg-brand-cream">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
         <!-- Image -->
@@ -38,32 +38,34 @@ import Layout from '../layouts/Layout.astro';
                 loading="lazy"
               />
             </div>
-            <!-- Floating accent card -->
             <div class="absolute -bottom-6 -right-6 bg-brand-red text-white rounded-2xl p-6 shadow-xl hidden md:block">
-              <p class="font-display text-3xl font-black">20+</p>
-              <p class="text-sm font-bold tracking-wider uppercase">Years Experience</p>
+              <p class="font-display text-3xl font-black">Lifetime</p>
+              <p class="text-sm font-bold tracking-wider uppercase">of Experience</p>
             </div>
           </div>
         </div>
 
-        <!-- Text -->
+        <!-- Text — Their actual story -->
         <div class="animate-on-scroll">
-          <p class="text-brand-red font-bold text-sm tracking-[0.3em] uppercase mb-4">Where the Bayou Meets the Beach</p>
-          <h2 class="section-heading mb-8">Our<br />Story</h2>
+          <p class="text-brand-red font-bold text-sm tracking-[0.3em] uppercase mb-4">Welcome to Our Table</p>
+          <h2 class="section-heading mb-8">Where the Bayou<br />Meets the Beach</h2>
           <div class="space-y-5 text-gray-600 leading-relaxed text-lg">
             <p>
-              Salty Papa's Shrimp House was born from a simple idea: bring the bold,
-              soulful flavors of the bayou to the sunny shores of Fort Myers.
+              Every item on our menu showcases proteins and produce that can be cultivated and sourced from
+              <strong>Florida and the South</strong>. Our homemade dishes feature rich and spicy foods found throughout
+              the bayous and across all of Florida and the old South, along with the light and citrus-infused flavors
+              found along the <strong>Gulf of Mexico</strong> coastlines.
             </p>
             <p>
-              Our owner brings decades of restaurant experience and an unwavering commitment to
-              quality. We source our seafood from Florida and the South — Gulf shrimp, stone crab,
-              fresh-caught grouper — and prepare everything from scratch.
+              We extend our "Southernality" into our drink menu as well, with real fruit frozen drinks featuring
+              <strong>Cape Coral's</strong> amazing <strong>Wicked Dolphin</strong> spiced honey rum, fresh fruit-infused
+              martinis, homemade frozen lemonades, and our craft beer line featuring <strong>Cigar City Brewing</strong> ales
+              made in Tampa, FL.
             </p>
             <p>
-              Our two professional chefs blend Cajun tradition with coastal creativity, creating
-              dishes that are comforting, flavorful, and always fresh. Whether you're here for our
-              signature shrimp &amp; grits or a cold rum punch on the patio, you're family.
+              All our <strong>fresh seafood</strong> comes from the Gulf waters brought to us from the
+              <strong>fishermen of Florida, Texas and Louisiana</strong>, and if a shortage should occur we will only source
+              US seafood — you will never find imported, chemical-coated shrimp in our kitchen!
             </p>
           </div>
           <div class="divider-gold mt-8"></div>
@@ -72,89 +74,135 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Promise Section -->
+  <section class="py-24 md:py-32 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <!-- Text -->
+        <div class="order-2 lg:order-1 animate-on-scroll">
+          <p class="text-brand-red font-bold text-sm tracking-[0.3em] uppercase mb-4">Our Promise to You</p>
+          <h2 class="section-heading mb-8">You're Family<br />Here</h2>
+          <div class="space-y-5 text-gray-600 leading-relaxed text-lg">
+            <p>
+              At Salty Papa's Shrimp House, you can count on us to always provide you authentic, fresh, homemade
+              food served by a caring and professional staff. We will never compromise on quality, and our
+              customers will <strong>always</strong> be right.
+            </p>
+            <p>
+              Small details like <strong>gluten-free</strong> and seafood-only designated deep fryers, and a wait staff
+              educated on ingredients will ensure a pleasant experience for diners sensitive to allergens.
+            </p>
+            <p>
+              Backed by an owner with a <strong>lifetime of restaurant experience</strong> and two <strong>amazing chefs</strong>,
+              the highest standards are always adhered to. The owner or manager on duty will always be available for any
+              special request, and any problem can be corrected on the spot.
+            </p>
+            <p class="text-brand-navy font-semibold italic text-xl font-display">
+              "When you come to Salty Papa's... we want you to feel at home, so stop on by and enjoy yourself for a spell."
+            </p>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="order-1 lg:order-2 animate-on-scroll">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
+              <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&q=80" alt="Chef preparing food with care" class="w-full h-48 md:h-64 object-cover" loading="lazy" />
+            </div>
+            <div class="img-zoom rounded-2xl overflow-hidden shadow-lg mt-8">
+              <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=400&q=80" alt="Patio dining at sunset" class="w-full h-48 md:h-64 object-cover" loading="lazy" />
+            </div>
+            <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
+              <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&q=80" alt="Dog-friendly patio" class="w-full h-48 md:h-64 object-cover" loading="lazy" />
+            </div>
+            <div class="img-zoom rounded-2xl overflow-hidden shadow-lg mt-8">
+              <img src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=400&q=80" alt="Fresh seafood spread" class="w-full h-48 md:h-64 object-cover" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pet Friendly Callout -->
+  <section class="relative py-20 overflow-hidden">
+    <div class="absolute inset-0">
+      <img
+        src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=1920&q=80"
+        alt="Happy dog outdoors"
+        class="w-full h-full object-cover"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 overlay-dark"></div>
+    </div>
+    <div class="relative max-w-3xl mx-auto px-4 text-center text-white animate-on-scroll">
+      <p class="text-brand-gold font-bold text-sm tracking-[0.3em] uppercase mb-4">Fur Family Welcome</p>
+      <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+        Pet-Friendly Courtyard Seating
+      </h2>
+      <p class="text-white/80 text-lg">
+        Did we mention our pet-friendly courtyard? That's right — bring your pup along!
+        We love our fur family and can't wait to meet yours. We even have a
+        special Pupper Meals menu for your four-legged friend.
+      </p>
+    </div>
+  </section>
+
   <!-- Values -->
-  <section class="bg-brand-cream py-24 md:py-32">
+  <section class="bg-white py-24 md:py-32">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-16">
-        <p class="text-brand-red font-bold text-sm tracking-[0.3em] uppercase mb-4 animate-on-scroll">Our Values</p>
-        <h2 class="section-heading animate-on-scroll">What We Stand For</h2>
+        <p class="text-brand-red font-bold text-sm tracking-[0.3em] uppercase mb-4 animate-on-scroll">What Matters to Us</p>
+        <h2 class="section-heading animate-on-scroll">Our Values</h2>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-sm animate-on-scroll delay-1">
-          <div class="w-16 h-16 bg-brand-blue/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <div class="bg-brand-cream rounded-2xl p-8 text-center card-hover animate-on-scroll delay-1">
+          <div class="w-16 h-16 bg-brand-blue/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-brand-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
             </svg>
           </div>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-3">Fresh Daily</h3>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-3">Always Fresh</h3>
           <p class="text-gray-500 text-sm leading-relaxed">
-            Seafood sourced from local Florida waters and the Gulf. Never frozen, always fresh.
+            USA-sourced Gulf seafood from Florida, Texas, and Louisiana fishermen. Never imported.
           </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-sm animate-on-scroll delay-2">
-          <div class="w-16 h-16 bg-brand-red/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <div class="bg-brand-cream rounded-2xl p-8 text-center card-hover animate-on-scroll delay-2">
+          <div class="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z" />
             </svg>
           </div>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-3">Scratch Kitchen</h3>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-3">Scratch-Made</h3>
           <p class="text-gray-500 text-sm leading-relaxed">
-            Everything made in-house — sauces, rubs, dressings, and desserts.
+            Every sauce, dressing, soup, and dessert is made from scratch right in our kitchen.
           </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-sm animate-on-scroll delay-3">
-          <div class="w-16 h-16 bg-green-100 rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <div class="bg-brand-cream rounded-2xl p-8 text-center card-hover animate-on-scroll delay-3">
+          <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z" />
             </svg>
           </div>
           <h3 class="font-display text-xl font-bold text-brand-navy mb-3">Allergen Safe</h3>
           <p class="text-gray-500 text-sm leading-relaxed">
-            Dedicated gluten-free fryers. Staff trained on allergen protocols.
+            Dedicated gluten-free fryers and a staff educated on every ingredient we use.
           </p>
         </div>
 
-        <div class="bg-white rounded-2xl p-8 text-center card-hover shadow-sm animate-on-scroll delay-4">
-          <div class="w-16 h-16 bg-brand-gold/10 rounded-2xl flex items-center justify-center mx-auto mb-5">
+        <div class="bg-brand-cream rounded-2xl p-8 text-center card-hover animate-on-scroll delay-4">
+          <div class="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-5">
             <svg class="w-8 h-8 text-brand-gold" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
             </svg>
           </div>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-3">Community</h3>
+          <h3 class="font-display text-xl font-bold text-brand-navy mb-3">You're Family</h3>
           <p class="text-gray-500 text-sm leading-relaxed">
-            Pet-friendly patio, local craft beers, and a welcoming spot for everyone.
+            Customer feedback drives us. The owner is always available. Your experience is our priority.
           </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Gallery -->
-  <section class="py-24 md:py-32 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center mb-16">
-        <p class="text-brand-red font-bold text-sm tracking-[0.3em] uppercase mb-4 animate-on-scroll">The Experience</p>
-        <h2 class="section-heading animate-on-scroll">A Taste of Salty Papa's</h2>
-      </div>
-
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 animate-on-scroll">
-        <div class="img-zoom rounded-2xl overflow-hidden shadow-lg col-span-2 row-span-2">
-          <img src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=800&q=80" alt="Fresh shrimp dish" class="w-full h-full object-cover" loading="lazy" />
-        </div>
-        <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
-          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80" alt="Gourmet burger" class="w-full h-48 md:h-full object-cover" loading="lazy" />
-        </div>
-        <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
-          <img src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&q=80" alt="Tropical cocktail" class="w-full h-48 md:h-full object-cover" loading="lazy" />
-        </div>
-        <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
-          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=400&q=80" alt="Chef preparing food" class="w-full h-48 md:h-full object-cover" loading="lazy" />
-        </div>
-        <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
-          <img src="https://images.unsplash.com/photo-1533777857889-4be7c70b33f7?w=400&q=80" alt="Restaurant dining atmosphere" class="w-full h-48 md:h-full object-cover" loading="lazy" />
         </div>
       </div>
     </div>
@@ -186,17 +234,17 @@ import Layout from '../layouts/Layout.astro';
   <section class="relative py-24 overflow-hidden">
     <div class="absolute inset-0">
       <img
-        src="https://images.unsplash.com/photo-1590759668628-05b0fc34bb70?w=1920&q=80"
-        alt="Fresh seafood spread"
+        src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=1920&q=80"
+        alt="Fresh Gulf shrimp"
         class="w-full h-full object-cover"
         loading="lazy"
       />
       <div class="absolute inset-0 overlay-dark"></div>
     </div>
     <div class="relative max-w-3xl mx-auto px-4 text-center text-white animate-on-scroll">
-      <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Ready to Eat?</h2>
+      <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Come Hungry,<br />Leave Happy</h2>
       <p class="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto">
-        Come taste what everyone's talking about. We're open daily, 11 AM to 8:30 PM.
+        Stop on by and enjoy yourself for a spell. We're open daily, 11 AM to 8:30 PM.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a href="/menu" class="btn-gold text-base px-12 py-5">See the Menu</a>

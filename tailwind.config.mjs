@@ -5,13 +5,15 @@ export default {
     extend: {
       colors: {
         brand: {
-          red: '#e63946',
-          blue: '#044d9a',
-          'blue-dark': '#033166',
-          navy: '#021b3a',
-          cream: '#fdf8f0',
-          sand: '#f5efe6',
-          gold: '#d4a843',
+          red: '#c1443e',
+          blue: '#2a5f8f',
+          'blue-dark': '#1e4468',
+          navy: '#1a2d3d',
+          cream: '#faf6f0',
+          sand: '#f0e8db',
+          gold: '#c9953c',
+          warm: '#f7f2ea',
+          brown: '#5c3d2e',
         },
       },
       fontFamily: {

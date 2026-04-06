@@ -13,7 +13,17 @@
       "Bash(git remote:*)",
       "Bash(git push:*)",
       "Bash(npx wrangler:*)",
-      "WebFetch(domain:salty-papas.pages.dev)"
+      "WebFetch(domain:salty-papas.pages.dev)",
+      "Bash(git ls-tree:*)",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -sL \"https://saltypapasshrimphouse.com/wp-content/uploads/2025/09/Whole-Menu-SEPT-2025.pdf\" -o /tmp/salty-menu.pdf)",
+      "Read(//tmp/**)",
+      "Read(//c/Users/Adrian/AppData/Local/Temp/**)",
+      "Read(//c/Users/Adrian/**)",
+      "Bash(pip install:*)",
+      "Bash(py --version)",
+      "Bash(npx pdf-parse:*)",
+      "Bash(node -e ':*)"
     ]
   }
 }
