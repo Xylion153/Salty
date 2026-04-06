@@ -1,0 +1,84 @@
+---
+import Layout from '../layouts/Layout.astro';
+import menuData from '../data/menu.json';
+---
+
+<Layout title="Menu" description="Explore the full menu at Salty Papa's Shrimp House — fresh Gulf seafood, po'boys, Cajun classics, and more.">
+  <!-- Page Header -->
+  <section class="bg-brand-navy text-white py-20 md:py-28">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-brand-gold text-sm tracking-[0.3em] uppercase font-semibold mb-4">
+        Fresh from the Gulf
+      </p>
+      <h1 class="font-display text-4xl md:text-6xl font-extrabold mb-4">Our Menu</h1>
+      <p class="text-white/70 text-lg max-w-xl mx-auto">
+        Cajun soul, Gulf Coast seafood, and everything in between. All made from scratch, daily.
+      </p>
+    </div>
+  </section>
+
+  <!-- Menu Navigation -->
+  <nav aria-label="Menu categories" class="bg-brand-cream sticky top-20 z-30 border-b border-brand-sand">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <ul class="flex gap-6 overflow-x-auto py-4 text-sm font-semibold" role="list">
+        {menuData.categories.map(cat => (
+          <li class="flex-shrink-0">
+            <a
+              href={`#${cat.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+              class="text-brand-blue hover:text-brand-red transition-colors whitespace-nowrap"
+            >
+              {cat.name}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Menu Sections -->
+  <div class="bg-white py-16 md:py-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      {menuData.categories.map(category => (
+        <section id={category.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')} class="scroll-mt-36">
+          <div class="mb-8">
+            <h2 class="section-heading mb-2">{category.name}</h2>
+            <p class="text-gray-500">{category.description}</p>
+            <div class="w-12 h-px bg-brand-gold mt-4"></div>
+          </div>
+
+          <ul class="divide-y divide-gray-100" role="list">
+            {category.items.map(item => (
+              <li class="py-5 flex justify-between gap-4 group">
+                <div class="flex-1">
+                  <h3 class="font-display text-lg font-semibold text-brand-navy group-hover:text-brand-red transition-colors">
+                    {item.name}
+                  </h3>
+                  <p class="text-gray-500 text-sm mt-1 leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
+                <div class="flex-shrink-0 pt-1">
+                  <span class="text-brand-red font-bold text-lg">
+                    {item.price === 'Market Price' ? item.price : `$${item.price}`}
+                  </span>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </div>
+
+  <!-- Bottom Note -->
+  <section class="bg-brand-cream py-12">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <p class="text-gray-500 text-sm">
+        Consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness.
+      </p>
+      <p class="text-gray-500 text-sm mt-2">
+        Please inform your server of any food allergies. We maintain dedicated gluten-free fryers.
+      </p>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,139 @@
+{
+  "categories": [
+    {
+      "name": "Starters",
+      "description": "Kick things off with a taste of the Gulf",
+      "items": [
+        {
+          "name": "Cajun Calamari",
+          "description": "Crispy fried calamari tossed in Cajun spices, served with remoulade sauce",
+          "price": "14.99"
+        },
+        {
+          "name": "Jalapeño Poppers",
+          "description": "Stuffed with cream cheese and shrimp, breaded and fried golden",
+          "price": "12.99"
+        },
+        {
+          "name": "Peel & Eat Shrimp",
+          "description": "Half pound of Gulf shrimp steamed in Old Bay, served with drawn butter",
+          "price": "16.99"
+        },
+        {
+          "name": "Stone Crab Claws",
+          "description": "Fresh Florida stone crab with mustard dipping sauce (seasonal)",
+          "price": "Market Price"
+        },
+        {
+          "name": "Hush Puppies",
+          "description": "Golden cornmeal fritters with a hint of jalapeño, served with honey butter",
+          "price": "8.99"
+        }
+      ]
+    },
+    {
+      "name": "Po'Boys & Sandwiches",
+      "description": "Served on toasted French bread with fries or coleslaw",
+      "items": [
+        {
+          "name": "Shrimp Po'Boy",
+          "description": "Crispy fried Gulf shrimp, shredded lettuce, tomato, and remoulade",
+          "price": "16.99"
+        },
+        {
+          "name": "Catfish Po'Boy",
+          "description": "Southern-fried catfish with pickles, slaw, and tartar sauce",
+          "price": "15.99"
+        },
+        {
+          "name": "Grouper Sandwich",
+          "description": "Grilled or blackened Gulf grouper on a brioche bun with mango slaw",
+          "price": "18.99"
+        },
+        {
+          "name": "Black Angus Burger",
+          "description": "Half-pound patty with cheddar, lettuce, tomato, and house-made pickles",
+          "price": "15.99"
+        }
+      ]
+    },
+    {
+      "name": "From the Gulf",
+      "description": "Fresh-caught favorites from Florida waters",
+      "items": [
+        {
+          "name": "Shrimp & Grits",
+          "description": "Sautéed Gulf shrimp over creamy stone-ground grits with andouille cream sauce",
+          "price": "22.99"
+        },
+        {
+          "name": "Catch of the Day",
+          "description": "Fresh local fish, grilled or blackened, served with seasonal vegetables",
+          "price": "Market Price"
+        },
+        {
+          "name": "Pan-Seared Scallops",
+          "description": "Jumbo sea scallops with brown butter, capers, and roasted fingerlings",
+          "price": "28.99"
+        },
+        {
+          "name": "Seafood Platter",
+          "description": "Fried shrimp, fish, calamari, and hush puppies with fries and coleslaw",
+          "price": "26.99"
+        },
+        {
+          "name": "Grilled Fish Tacos",
+          "description": "Three tacos with blackened fish, cabbage slaw, pico de gallo, and chipotle crema",
+          "price": "17.99"
+        }
+      ]
+    },
+    {
+      "name": "Salads",
+      "description": "Fresh and light, perfect for a warm Florida day",
+      "items": [
+        {
+          "name": "Gulf Shrimp Salad",
+          "description": "Grilled shrimp over mixed greens with avocado, mango, and citrus vinaigrette",
+          "price": "18.99"
+        },
+        {
+          "name": "Caesar Salad",
+          "description": "Crisp romaine, house-made croutons, shaved parmesan, and classic dressing",
+          "price": "12.99"
+        },
+        {
+          "name": "Cobb Salad",
+          "description": "Mixed greens with grilled chicken, bacon, egg, avocado, and blue cheese",
+          "price": "16.99"
+        }
+      ]
+    },
+    {
+      "name": "Drinks",
+      "description": "Local craft beers, specialty cocktails, and more",
+      "items": [
+        {
+          "name": "Salty Papa's Rum Punch",
+          "description": "House specialty with local Florida rum, tropical juices, and a dark rum float",
+          "price": "12.00"
+        },
+        {
+          "name": "Tampa Craft Beer",
+          "description": "Rotating selection of local craft brews — ask your server for today's picks",
+          "price": "7.00"
+        },
+        {
+          "name": "Fresh Squeezed Lemonade",
+          "description": "House-made lemonade, available plain, strawberry, or mango",
+          "price": "5.00"
+        },
+        {
+          "name": "Sweet Tea",
+          "description": "Southern-style sweet tea brewed fresh daily",
+          "price": "3.50"
+        }
+      ]
+    }
+  ]
+}
