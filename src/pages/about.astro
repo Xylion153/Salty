@@ -4,20 +4,11 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="About" description="Learn about Salty Papa's Shrimp House — our story, our chefs, and our commitment to fresh Gulf seafood in Fort Myers.">
   <!-- Hero -->
-  <section class="relative py-32 md:py-44 overflow-hidden">
-    <div class="absolute inset-0">
-      <img
-        src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=80"
-        alt="Warm restaurant atmosphere with ambient lighting"
-        class="w-full h-full object-cover"
-        loading="eager"
-      />
-      <div class="absolute inset-0 overlay-dark"></div>
-    </div>
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-      <p class="text-brand-gold text-sm tracking-[0.4em] uppercase font-bold mb-6 animate-fade-in">Our Story</p>
-      <h1 class="font-display text-5xl md:text-7xl font-black mb-6 animate-fade-in">About Us</h1>
-      <p class="text-white/70 text-lg md:text-xl max-w-xl mx-auto animate-fade-in">
+  <section class="bg-brand-navy py-24 md:py-32">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+      <p class="text-brand-gold text-sm tracking-[0.3em] uppercase font-bold mb-4 animate-fade-in">Our Story</p>
+      <h1 class="font-display text-4xl md:text-5xl font-bold mb-4 animate-fade-in">About Us</h1>
+      <p class="text-white/60 text-lg max-w-xl mx-auto animate-fade-in">
         Where the Bayou Meets the Beach... Everyday!
       </p>
     </div>
@@ -125,25 +116,14 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- Pet Friendly Callout -->
-  <section class="relative py-20 overflow-hidden">
-    <div class="absolute inset-0">
-      <img
-        src="https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?w=1920&q=80"
-        alt="Happy dog outdoors"
-        class="w-full h-full object-cover"
-        loading="lazy"
-      />
-      <div class="absolute inset-0 overlay-dark"></div>
-    </div>
-    <div class="relative max-w-3xl mx-auto px-4 text-center text-white animate-on-scroll">
-      <p class="text-brand-gold font-bold text-sm tracking-[0.3em] uppercase mb-4">Fur Family Welcome</p>
-      <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
-        Pet-Friendly Courtyard Seating
+  <section class="bg-brand-navy py-14">
+    <div class="max-w-3xl mx-auto px-4 text-center text-white animate-on-scroll">
+      <h2 class="font-display text-2xl md:text-3xl font-bold mb-3">
+        Bring Your Pup!
       </h2>
-      <p class="text-white/80 text-lg">
-        Did we mention our pet-friendly courtyard? That's right — bring your pup along!
-        We love our fur family and can't wait to meet yours. We even have a
-        special Pupper Meals menu for your four-legged friend.
+      <p class="text-white/70 text-lg">
+        We've got a pet-friendly courtyard and a Pupper Meals menu for your four-legged friend.
+        We love our fur family and can't wait to meet yours.
       </p>
     </div>
   </section>
@@ -231,24 +211,15 @@ import Layout from '../layouts/Layout.astro';
   </section>
 
   <!-- CTA -->
-  <section class="relative py-24 overflow-hidden">
-    <div class="absolute inset-0">
-      <img
-        src="https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?w=1920&q=80"
-        alt="Fresh Gulf shrimp"
-        class="w-full h-full object-cover"
-        loading="lazy"
-      />
-      <div class="absolute inset-0 overlay-dark"></div>
-    </div>
-    <div class="relative max-w-3xl mx-auto px-4 text-center text-white animate-on-scroll">
-      <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">Come Hungry,<br />Leave Happy</h2>
-      <p class="text-white/80 text-lg md:text-xl mb-10 max-w-xl mx-auto">
-        Stop on by and enjoy yourself for a spell. We're open daily, 11 AM to 8:30 PM.
+  <section class="bg-brand-cream py-16 text-center">
+    <div class="max-w-3xl mx-auto px-4 animate-on-scroll">
+      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mb-4">Come Hungry, Leave Happy</h2>
+      <p class="text-gray-600 text-lg mb-8">
+        Stop on by and enjoy yourself for a spell. We're open daily, 11am to 8:30pm.
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/menu" class="btn-gold text-base px-12 py-5">See the Menu</a>
-        <a href="/contact" class="btn-outline text-base px-12 py-5">Get Directions</a>
+        <a href="/menu" class="btn-primary">See the Menu</a>
+        <a href="/contact" class="btn-gold">Get Directions</a>
       </div>
     </div>
   </section>

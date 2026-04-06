@@ -14,12 +14,20 @@ const currentPath = Astro.url.pathname;
     <div class="flex items-center justify-between h-20">
       <!-- Logo -->
       <a href="/" class="flex items-center gap-3 group" aria-label="Salty Papa's Shrimp House — Home">
-        <div class="w-11 h-11 bg-brand-red rounded-full flex items-center justify-center text-white font-display font-bold text-lg shadow-lg group-hover:scale-110 transition-transform duration-300" aria-hidden="true">
+        <!-- Replace src with your actual logo file, e.g. /logo.png -->
+        <img
+          src="/logo.png"
+          alt="Salty Papa's Shrimp House"
+          class="h-14 w-auto drop-shadow-lg"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+        />
+        <!-- Fallback if logo image hasn't been added yet -->
+        <div class="w-11 h-11 bg-brand-red rounded-full items-center justify-center text-white font-display font-bold text-lg hidden" aria-hidden="true">
           SP
         </div>
         <div class="hidden sm:block">
           <span class="text-xl font-display font-bold tracking-wide text-white drop-shadow-lg">Salty Papa's</span>
-          <span class="block text-xs text-brand-gold tracking-[0.2em] uppercase font-semibold">Shrimp House</span>
+          <span class="block text-xs text-brand-gold tracking-[0.15em] uppercase font-semibold">Shrimp House</span>
         </div>
       </a>
 
