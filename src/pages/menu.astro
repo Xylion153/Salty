@@ -7,7 +7,8 @@ import menuData from '../data/menu.json';
   <!-- Hero -->
   <section class="relative overflow-hidden bg-brand-navy">
     <div class="absolute inset-0">
-      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=1920&q=80" alt="Food spread" class="w-full h-full object-cover opacity-20" loading="eager" />
+      <img src="/poboy.png" alt="" class="w-full h-full object-cover opacity-20" loading="eager" aria-hidden="true" />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/70 to-brand-navy/40"></div>
     </div>
     <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 text-center text-white">
       <p class="text-brand-gold text-sm tracking-wider font-semibold mb-3 animate-fade-in">Fresh from the Gulf</p>
@@ -44,19 +45,15 @@ import menuData from '../data/menu.json';
       {menuData.categories.map((category) => (
         <section id={category.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')} class="scroll-mt-28">
           <div class="grid grid-cols-1 md:grid-cols-[260px_1fr] gap-8 md:gap-12 animate-on-scroll">
-            <!-- Category image & heading -->
+            <!-- Category heading -->
             <div class="md:sticky md:top-28 md:self-start">
-              {category.image && (
-                <div class="img-zoom rounded-2xl overflow-hidden shadow-lg">
-                  <img
-                    src={category.image}
-                    alt={category.name}
-                    class="w-full h-44 md:h-56 object-cover"
-                    loading="lazy"
-                  />
-                </div>
-              )}
-              <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mt-5 mb-2">{category.name}</h2>
+              <div class="w-14 h-14 rounded-2xl bg-brand-teal/10 text-brand-teal flex items-center justify-center mb-4">
+                <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.5 2.5 4 5.5 4 8.5a4 4 0 11-8 0c0-3 1.5-6 4-8.5z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8.5 17.5L5 21M15.5 17.5L19 21" />
+                </svg>
+              </div>
+              <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mb-2">{category.name}</h2>
               <p class="text-gray-400 text-sm leading-relaxed">{category.description}</p>
               <div class="divider-gold mt-4"></div>
             </div>

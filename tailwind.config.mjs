@@ -5,14 +5,18 @@ export default {
     extend: {
       colors: {
         brand: {
-          red: '#f53136',
-          blue: '#044d9a',
-          'blue-dark': '#033166',
-          navy: '#022247',
-          cream: '#faf6f0',
-          sand: '#f0e8db',
-          gold: '#c9953c',
-          warm: '#f7f2ea',
+          red: '#e2572c',
+          'red-dark': '#c1431c',
+          blue: '#2f8f8a',
+          'blue-dark': '#206e6a',
+          teal: '#2f8f8a',
+          'teal-dark': '#206e6a',
+          navy: '#0d2a40',
+          'navy-dark': '#081b29',
+          cream: '#fbf6ee',
+          sand: '#f0e4d2',
+          gold: '#d9a441',
+          warm: '#f8f1e7',
         },
       },
       fontFamily: {

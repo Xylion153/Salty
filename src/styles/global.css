@@ -41,6 +41,12 @@
            transition-colors duration-200 text-center text-sm;
   }
 
+  .btn-teal {
+    @apply inline-block bg-brand-teal text-white font-semibold px-6 py-3 rounded-lg
+           hover:bg-brand-teal-dark
+           transition-colors duration-200 text-center text-sm;
+  }
+
   /* Scroll animations — gentle */
   .animate-on-scroll {
     opacity: 0;
@@ -107,5 +113,41 @@
   /* Divider */
   .divider-gold {
     @apply w-12 h-0.5 bg-brand-gold rounded-full;
+  }
+
+  .divider-teal {
+    @apply w-12 h-0.5 bg-brand-teal rounded-full;
+  }
+
+  /* Section heading used across inner pages */
+  .section-heading {
+    @apply font-display text-3xl md:text-4xl font-bold text-brand-navy leading-tight;
+  }
+
+  /* Hover lift for cards */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  /* Menu accordion */
+  .menu-accordion-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .menu-accordion-item summary {
+    list-style: none;
+  }
+
+  .menu-accordion-item[open] .menu-accordion-chevron {
+    transform: rotate(180deg);
+  }
+
+  .menu-accordion-item .menu-accordion-panel {
+    animation: accordion-down 0.25s ease;
+  }
+
+  @keyframes accordion-down {
+    from { opacity: 0; transform: translateY(-6px); }
+    to { opacity: 1; transform: translateY(0); }
   }
 }

@@ -1,5 +1,46 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import MenuPreview from '../components/MenuPreview.astro';
+
+const featuredDishes = [
+  {
+    name: "Papa's Famous Shrimp & Grits",
+    tag: 'Signature Dish',
+    img: '/shrimp-grits.png',
+    desc: 'Creamy cheddar grits topped with sautéed pink Gulf shrimp, andouille sausage, peppers, and our Low Country seasonings.',
+    price: '24.99',
+  },
+  {
+    name: 'Bacon Wrapped Shrimp',
+    tag: 'Fan Favorite',
+    img: '/bacon-shrimp.png',
+    desc: 'Sweet pink shrimp wrapped in hickory smoked bacon, brushed with sweet barbeque sauce. Served with fries and slaw.',
+    price: '24.99',
+  },
+  {
+    name: 'Louisiana Gator Tail',
+    tag: 'Southern Classic',
+    img: '/gatortail.png',
+    desc: 'Bite-sized pieces of real gator, marinated, lightly floured and fried, served with our Cajun remoulade.',
+    price: '16.99',
+  },
+  {
+    name: 'The Salty Papa Margarita',
+    tag: 'Signature Drink',
+    img: '/margarita.png',
+    desc: 'Premium tequila and orange liqueur with real lime, lemon, and orange juices. On the rocks or frozen.',
+    price: '9.99',
+  },
+];
+
+const galleryImages = [
+  { src: '/shrimp-grits.png', alt: "Papa's Famous Shrimp and Grits" },
+  { src: '/bacon-shrimp.png', alt: 'Bacon Wrapped Shrimp with fries and slaw' },
+  { src: '/poboy.png', alt: "Jumbo Shrimp Po' Boy with hush puppies" },
+  { src: '/gatortail.png', alt: 'Louisiana Gator Tail with remoulade' },
+  { src: '/margarita.png', alt: 'The Salty Papa Margarita' },
+  { src: '/background.png', alt: "Salty Papa's Shrimp House menu spread" },
+];
 ---
 
 <Layout title="Home">
@@ -7,21 +48,25 @@ import Layout from '../layouts/Layout.astro';
   <section class="relative overflow-hidden bg-brand-navy">
     <div class="absolute inset-0">
       <img
-        src="/background.png"
-        alt="Salty Papa's Shrimp House menu and food"
-        class="w-full h-full object-cover opacity-20"
+        src="/shrimp-grits.png"
+        alt="Papa's Famous Shrimp and Grits"
+        class="w-full h-full object-cover opacity-30"
         loading="eager"
       />
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-navy via-brand-navy/70 to-brand-navy/40"></div>
     </div>
-    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-36 md:py-48 text-center text-white">
-      <h1 class="font-display text-4xl md:text-5xl font-bold mb-3 animate-fade-in">
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-32 md:py-44 text-center text-white">
+      <p class="text-brand-gold text-sm md:text-base tracking-[0.25em] uppercase font-semibold mb-4 animate-fade-in">
+        Family Owned &bull; Fort Myers, FL
+      </p>
+      <h1 class="font-display text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
         Salty Papa's Shrimp House
       </h1>
-      <p class="text-brand-gold text-lg md:text-xl mb-2 animate-fade-in">
+      <p class="text-white/80 text-lg md:text-xl mb-2 animate-fade-in">
         Where the Bayou Meets the Beach
       </p>
       <p class="text-white/50 mb-10 animate-fade-in">
-        Fort Myers, Florida &bull; Open Daily 11am – 8:30pm
+        Scratch-made Gulf seafood &amp; Southern comfort, served up by the family — open daily 11am – 8:30pm
       </p>
       <div class="flex flex-col sm:flex-row gap-3 justify-center animate-fade-in">
         <a href="/menu" class="btn-primary px-8 py-3.5">See Our Menu</a>
@@ -30,251 +75,173 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Welcome -->
-  <section class="bg-brand-cream py-16 md:py-20">
-    <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mb-5 animate-on-scroll">
-        Come On In, Y'all
-      </h2>
-      <p class="text-gray-600 leading-relaxed mb-4 animate-on-scroll">
-        Everything on our menu is sourced from Florida and the South and made from scratch
-        right here in our kitchen. Our two amazing chefs bring you the rich, spicy flavors of the
-        bayou alongside the fresh, light tastes of the Gulf Coast.
-      </p>
-      <p class="text-gray-600 leading-relaxed animate-on-scroll">
-        We're a neighborhood spot — come as you are, bring the family (and the dog!),
-        and enjoy yourself for a spell.
-      </p>
-      <div class="divider-gold mx-auto mt-6 animate-on-scroll"></div>
+  <!-- The Story -->
+  <section class="relative overflow-hidden bg-brand-navy text-white">
+    <div class="absolute inset-0">
+      <img src="/background.png" alt="" class="w-full h-full object-cover opacity-10" loading="lazy" aria-hidden="true" />
     </div>
-  </section>
-
-  <!-- Fan Favorites — dishes that pop in as you scroll -->
-  <section class="py-16 md:py-20 bg-white overflow-hidden">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy text-center mb-12 animate-on-scroll">
-        Fan Favorites
-      </h2>
-
-      <!-- Dish 1: Shrimp & Grits — left image -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
-        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
-          <img src="/shrimp-grits.png" alt="Papa's Famous Shrimp and Grits" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
-        </div>
-        <div class="dish-slide-right">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Signature Dish</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Papa's Famous Shrimp &amp; Grits</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">
-            Creamy cheddar cheese grits topped with sautéed pink Gulf shrimp, spicy andouille sausage,
-            white wine, peppers, and our signature Low Country seasonings. The dish that put us on the map.
-          </p>
-          <p class="text-brand-red font-display font-bold text-lg mt-3">$24.99</p>
-        </div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24">
+      <div class="text-center mb-12 animate-on-scroll">
+        <p class="text-brand-gold font-bold text-xs tracking-[0.3em] uppercase mb-3">The Story</p>
+        <h2 class="font-display text-2xl md:text-4xl font-bold">Who Was Salty Papa?</h2>
+        <div class="divider-teal mx-auto mt-4"></div>
       </div>
 
-      <!-- Dish 2: Bacon Wrapped Shrimp — right image -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
-        <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
-          <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp with sweet potato fries and coleslaw" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
-        </div>
-        <div class="dish-slide-right md:order-1">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Fan Favorite</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Bacon Wrapped Shrimp</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">
-            Two skewers of large sweet pink shrimp wrapped in slices of hickory smoked bacon,
-            brushed with sweet barbeque sauce. Served with sweet potato fries and creamy coleslaw.
-          </p>
-          <p class="text-brand-red font-display font-bold text-lg mt-3">$24.99</p>
-        </div>
+      <div class="space-y-5 text-white/75 leading-relaxed text-base md:text-lg max-w-3xl mx-auto text-center animate-on-scroll">
+        <p>
+          Long before there was a restaurant, there was just Papa — raised around boatyards and
+          docks, where the day's catch came straight off the water and onto the table, no
+          shortcuts allowed. He grew up believing a meal was only as good as what went into it,
+          and he never let anyone forget it.
+        </p>
+        <p>
+          When his family decided to open a place of their own, they built it around the same
+          handful of rules Papa always lived by. Those rules are still the backbone of this
+          kitchen today.
+        </p>
+        <p class="font-display italic text-brand-gold text-lg md:text-xl pt-2">
+          "Feed people something real, made with care, and they'll always come back —
+          every plate should feel like a celebration."
+        </p>
       </div>
 
-      <!-- Dish 3: Louisiana Gator Tail — left image -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
-        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
-          <img src="/gatortail.png" alt="Louisiana Gator Tail with Cajun remoulade" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
+      <!-- Papa's Rules -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-14">
+        <div class="bg-white/5 rounded-2xl p-6 text-center animate-on-scroll delay-1">
+          <div class="w-12 h-12 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 12c0 1.5-3 6-9 6s-9-4.5-9-6 3-6 9-6 9 4.5 9 6z" />
+              <circle cx="12" cy="12" r="2" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold mb-2">Fresh, U.S. Seafood</h3>
+          <p class="text-white/60 text-sm leading-relaxed">Always local, always domestic. Never imported.</p>
         </div>
-        <div class="dish-slide-right">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Southern Classic</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Louisiana Gator Tail</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">
-            Bite-sized pieces of real gator marinated, lightly-floured and fried, served with our
-            Cajun remoulade. A true southern classic you won't find just anywhere.
-          </p>
-          <p class="text-brand-red font-display font-bold text-lg mt-3">$16.99</p>
-        </div>
-      </div>
 
-      <!-- Dish 4: The Salty Papa Margarita — right image -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-14">
-        <div class="dish-slide-left md:order-2 rounded-xl overflow-hidden shadow-md">
-          <img src="/margarita.png" alt="The Salty Papa Margarita in a mason jar with lime and watermelon" class="w-full h-56 md:h-64 object-cover object-center" loading="lazy" />
+        <div class="bg-white/5 rounded-2xl p-6 text-center animate-on-scroll delay-2">
+          <div class="w-12 h-12 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 3c2.5 2.5 4 5.5 4 8.5a4 4 0 11-8 0c0-3 1.5-6 4-8.5z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold mb-2">Real Gulf Pink Shrimp</h3>
+          <p class="text-white/60 text-sm leading-relaxed">The good stuff — "pink gold," straight from Gulf waters.</p>
         </div>
-        <div class="dish-slide-right md:order-1">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Signature Drink</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">The Salty Papa Margarita</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">
-            Premium tequila and orange liqueur blended with real lime, lemon, and orange juices.
-            On the rocks or frozen — traditional, strawberry, or mango. The perfect Gulf Coast sipper.
-          </p>
-          <p class="text-brand-red font-display font-bold text-lg mt-3">$9.99</p>
-        </div>
-      </div>
 
-      <!-- Dish 5: Shrimp Po'Boy — left image -->
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div class="dish-slide-left rounded-xl overflow-hidden shadow-md">
-          <img src="/poboy.png" alt="Jumbo Shrimp Po'Boy with hush puppies" class="w-full h-56 md:h-64 object-cover object-top" loading="lazy" />
+        <div class="bg-white/5 rounded-2xl p-6 text-center animate-on-scroll delay-3">
+          <div class="w-12 h-12 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6l4 2M5 5l1.5 1.5M19 5l-1.5 1.5M3 12h2m14 0h2M12 19v2" />
+              <circle cx="12" cy="12" r="8" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold mb-2">Nothing Frozen or Pre-Made</h3>
+          <p class="text-white/60 text-sm leading-relaxed">Sauces, soups, and sides — made fresh, every day.</p>
         </div>
-        <div class="dish-slide-right">
-          <p class="text-brand-red text-xs font-semibold tracking-wider uppercase mb-1">Classic</p>
-          <h3 class="font-display text-xl font-bold text-brand-navy mb-2">Jumbo Shrimp Po' Boy</h3>
-          <p class="text-gray-500 leading-relaxed text-sm">
-            Fresh bakery long roll loaded with crispy-fried Gulf shrimp, fully dressed with chopped lettuce,
-            tomato, and our homemade Cajun remoulade. Served with hush puppies.
-          </p>
-          <p class="text-brand-red font-display font-bold text-lg mt-3">$16.99</p>
-        </div>
-      </div>
 
-      <div class="text-center mt-12 animate-on-scroll">
-        <a href="/menu" class="btn-primary px-8 py-3.5">See Full Menu</a>
+        <div class="bg-white/5 rounded-2xl p-6 text-center animate-on-scroll delay-4">
+          <div class="w-12 h-12 bg-brand-teal/20 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg class="w-6 h-6 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 19.5A2.5 2.5 0 016.5 17H20M4 4.5A2.5 2.5 0 016.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15z" />
+            </svg>
+          </div>
+          <h3 class="font-display font-bold mb-2">True Southern Recipes</h3>
+          <p class="text-white/60 text-sm leading-relaxed">Bayou spice meets Gulf Coast comfort, the old-fashioned way.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- What We're Known For -->
+  <!-- Featured Dishes -->
   <section class="py-16 md:py-20 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy text-center mb-10 animate-on-scroll">
-        What We're Known For
-      </h2>
+      <div class="text-center mb-12 animate-on-scroll">
+        <p class="text-brand-red font-bold text-xs tracking-[0.3em] uppercase mb-3">From Our Kitchen</p>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy">Fan Favorites</h2>
+        <div class="divider-teal mx-auto mt-4"></div>
+      </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <a href="/menu#signature-shrimp-dishes" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-1">
-          <div class="img-zoom h-52">
-            <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp" class="w-full h-full object-cover" loading="lazy" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {featuredDishes.map((dish, i) => (
+          <div class={`group rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300 bg-white border border-brand-sand animate-on-scroll delay-${i + 1}`}>
+            <div class="img-zoom h-44">
+              <img src={dish.img} alt={dish.name} class="w-full h-full object-cover" loading="lazy" />
+            </div>
+            <div class="p-5">
+              <p class="text-brand-teal text-[11px] font-bold tracking-wider uppercase mb-1.5">{dish.tag}</p>
+              <h3 class="font-display text-base font-bold text-brand-navy mb-1.5 leading-snug group-hover:text-brand-red transition-colors">
+                {dish.name}
+              </h3>
+              <p class="text-gray-400 text-xs leading-relaxed mb-3 line-clamp-3">{dish.desc}</p>
+              <p class="text-brand-red font-display font-bold text-lg">${dish.price}</p>
+            </div>
           </div>
-          <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Fresh Gulf Seafood</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">
-              Real USA wild-caught shrimp, grouper, oysters, stone crab, and today's catch —
-              straight from Gulf fishermen. Never imported.
-            </p>
-            <span class="text-brand-red text-sm font-semibold mt-3 inline-block group-hover:translate-x-1 transition-transform">See menu &rarr;</span>
-          </div>
-        </a>
-
-        <a href="/menu#papa-s-signature-drinks" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-2">
-          <div class="img-zoom h-52">
-            <img src="/margarita.png" alt="The Salty Papa Margarita" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Signature Cocktails</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">
-              The Salty Papa Margarita, Snowbird frozen rum drinks, Blue Mermaid —
-              11 signature cocktails plus Wicked Dolphin rum and Cigar City craft beers.
-            </p>
-            <span class="text-brand-red text-sm font-semibold mt-3 inline-block group-hover:translate-x-1 transition-transform">See drinks &rarr;</span>
-          </div>
-        </a>
-
-        <a href="/menu#homemade-appetizers" class="group rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow bg-white animate-on-scroll delay-3">
-          <div class="img-zoom h-52">
-            <img src="/gatortail.png" alt="Louisiana Gator Tail" class="w-full h-full object-cover" loading="lazy" />
-          </div>
-          <div class="p-5">
-            <h3 class="font-display text-lg font-bold text-brand-navy mb-1.5 group-hover:text-brand-red transition-colors">Southern Starters</h3>
-            <p class="text-gray-500 text-sm leading-relaxed">
-              Gator tail, fried green tomatoes, peel-n-eat shrimp, hush puppies, fresh oysters —
-              scratch-made appetizers you won't find anywhere else.
-            </p>
-            <span class="text-brand-red text-sm font-semibold mt-3 inline-block group-hover:translate-x-1 transition-transform">See menu &rarr;</span>
-          </div>
-        </a>
+        ))}
       </div>
     </div>
   </section>
 
-  <!-- Red accent band -->
-  <section class="bg-brand-red text-white py-10">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-        <div class="animate-on-scroll delay-1">
-          <p class="font-display text-2xl font-bold">100%</p>
-          <p class="text-white/70 text-xs mt-0.5">Scratch-Made</p>
-        </div>
-        <div class="animate-on-scroll delay-2">
-          <p class="font-display text-2xl font-bold">GF Fryers</p>
-          <p class="text-white/70 text-xs mt-0.5">Allergy Friendly</p>
-        </div>
-        <div class="animate-on-scroll delay-3">
-          <p class="font-display text-2xl font-bold">Pup Menu</p>
-          <p class="text-white/70 text-xs mt-0.5">Pet-Friendly Patio</p>
-        </div>
-        <div class="animate-on-scroll delay-4">
-          <p class="font-display text-2xl font-bold">5 Stars</p>
-          <p class="text-white/70 text-xs mt-0.5">Yelp &bull; TripAdvisor</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Why folks come back — side by side -->
-  <section class="py-16 md:py-20 bg-white">
+  <!-- About Salty Papa's -->
+  <section class="py-16 md:py-24 bg-brand-cream">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <!-- Image grid -->
         <div class="grid grid-cols-2 gap-3 animate-on-scroll">
-          <div class="rounded-xl overflow-hidden">
-            <img src="/shrimp-grits.png" alt="Shrimp and Grits" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp" class="w-full h-40 md:h-56 object-cover" loading="lazy" />
           </div>
-          <div class="rounded-xl overflow-hidden mt-6">
-            <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
+          <div class="rounded-2xl overflow-hidden shadow-lg mt-8">
+            <img src="/gatortail.png" alt="Louisiana Gator Tail" class="w-full h-40 md:h-56 object-cover" loading="lazy" />
           </div>
-          <div class="rounded-xl overflow-hidden">
-            <img src="/margarita.png" alt="The Salty Papa Margarita" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
+          <div class="rounded-2xl overflow-hidden shadow-lg">
+            <img src="/poboy.png" alt="Jumbo Shrimp Po' Boy" class="w-full h-40 md:h-56 object-cover" loading="lazy" />
           </div>
-          <div class="rounded-xl overflow-hidden mt-6">
-            <img src="/gatortail.png" alt="Louisiana Gator Tail" class="w-full h-40 md:h-52 object-cover" loading="lazy" />
+          <div class="rounded-2xl overflow-hidden shadow-lg mt-8">
+            <img src="/margarita.png" alt="The Salty Papa Margarita" class="w-full h-40 md:h-56 object-cover" loading="lazy" />
           </div>
         </div>
 
+        <!-- Text -->
         <div class="animate-on-scroll">
+          <p class="text-brand-red font-bold text-xs tracking-[0.3em] uppercase mb-3">A Family Affair</p>
           <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy mb-5">
-            Why Folks Keep Coming Back
+            A Little Slice of the Bayou,<br />Run by Family
           </h2>
-          <ul class="space-y-3.5 text-gray-600">
-            <li class="flex gap-3 items-start">
-              <span class="w-6 h-6 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-brand-red text-xs font-bold">&#10003;</span>
-              </span>
-              <span><strong>Allergy friendly</strong> — dedicated gluten-free fryers, staff trained on every ingredient</span>
-            </li>
-            <li class="flex gap-3 items-start">
-              <span class="w-6 h-6 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-brand-red text-xs font-bold">&#10003;</span>
-              </span>
-              <span><strong>Pet-friendly courtyard</strong> — bring the pup, we've got a Pupper Meals menu for them</span>
-            </li>
-            <li class="flex gap-3 items-start">
-              <span class="w-6 h-6 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-brand-red text-xs font-bold">&#10003;</span>
-              </span>
-              <span><strong>Everything homemade</strong> — sauces, dressings, soups, desserts, all from scratch daily</span>
-            </li>
-            <li class="flex gap-3 items-start">
-              <span class="w-6 h-6 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-brand-red text-xs font-bold">&#10003;</span>
-              </span>
-              <span><strong>Never imported seafood</strong> — only USA-sourced from Florida, Texas, and Louisiana fishermen</span>
-            </li>
-            <li class="flex gap-3 items-start">
-              <span class="w-6 h-6 bg-brand-red/10 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5">
-                <span class="text-brand-red text-xs font-bold">&#10003;</span>
-              </span>
-              <span><strong>Owner always on-site</strong> — any request or concern, handled right on the spot</span>
-            </li>
-          </ul>
-          <a href="/about" class="inline-block mt-6 text-brand-red font-semibold text-sm hover:text-red-700 transition-colors">
+          <div class="space-y-4 text-gray-600 leading-relaxed">
+            <p>
+              Salty Papa's is a true ma-and-pa shop — the owner is on-site every day, our two chefs
+              cook everything from scratch, and the whole crew treats every guest like family.
+            </p>
+            <p>
+              We bring you the rich, spicy flavors of the bayou alongside the fresh, light tastes
+              of the Gulf Coast — using genuine USA wild-caught shrimp and Florida-sourced
+              ingredients. Never imported, never frozen-and-forgotten.
+            </p>
+            <p>
+              Come as you are, bring the family (and the dog — we've got a pet-friendly patio and
+              a Pupper Meals menu), and stay for a spell.
+            </p>
+          </div>
+          <div class="divider-gold mt-6 mb-6"></div>
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+            <div>
+              <p class="font-display text-xl font-bold text-brand-navy">100%</p>
+              <p class="text-gray-400 text-xs mt-0.5">Scratch-Made</p>
+            </div>
+            <div>
+              <p class="font-display text-xl font-bold text-brand-navy">GF Fryers</p>
+              <p class="text-gray-400 text-xs mt-0.5">Allergy Friendly</p>
+            </div>
+            <div>
+              <p class="font-display text-xl font-bold text-brand-navy">Pup Menu</p>
+              <p class="text-gray-400 text-xs mt-0.5">Pet-Friendly Patio</p>
+            </div>
+            <div>
+              <p class="font-display text-xl font-bold text-brand-navy">5 Stars</p>
+              <p class="text-gray-400 text-xs mt-0.5">Yelp &amp; TripAdvisor</p>
+            </div>
+          </div>
+          <a href="/about" class="inline-block mt-6 text-brand-red font-semibold text-sm hover:text-brand-red-dark transition-colors">
             Read our full story &rarr;
           </a>
         </div>
@@ -282,15 +249,35 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
+  <!-- Menu Preview -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 animate-on-scroll">
+        <p class="text-brand-red font-bold text-xs tracking-[0.3em] uppercase mb-3">Take a Peek</p>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy">A Taste of the Menu</h2>
+        <p class="text-gray-400 text-sm mt-3 max-w-xl mx-auto">
+          Tap a category to see what's inside — from homemade starters to our famous Gulf shrimp.
+        </p>
+        <div class="divider-teal mx-auto mt-4"></div>
+      </div>
+
+      <div class="animate-on-scroll">
+        <MenuPreview />
+      </div>
+    </div>
+  </section>
+
   <!-- Reviews -->
-  <section class="bg-brand-cream py-16 md:py-20">
+  <section class="bg-brand-sand py-16 md:py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy text-center mb-10 animate-on-scroll">
-        What People Are Saying
-      </h2>
+      <div class="text-center mb-10 animate-on-scroll">
+        <p class="text-brand-red font-bold text-xs tracking-[0.3em] uppercase mb-3">Y'all Said It</p>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy">What People Are Saying</h2>
+        <div class="divider-teal mx-auto mt-4"></div>
+      </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div class="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-1">
+        <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-1">
           <div class="flex gap-0.5 mb-3 text-yellow-500">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
@@ -300,7 +287,7 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-sm font-semibold text-brand-navy">Mike R. <span class="font-normal text-gray-400">— Yelp</span></p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-2">
+        <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-2">
           <div class="flex gap-0.5 mb-3 text-yellow-500">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
@@ -310,7 +297,7 @@ import Layout from '../layouts/Layout.astro';
           <p class="text-sm font-semibold text-brand-navy">Sarah T. <span class="font-normal text-gray-400">— Google</span></p>
         </div>
 
-        <div class="bg-white rounded-xl p-6 shadow-sm animate-on-scroll delay-3">
+        <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-3">
           <div class="flex gap-0.5 mb-3 text-yellow-500">
             <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
           </div>
@@ -323,35 +310,117 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </section>
 
-  <!-- Visit CTA with image -->
-  <section class="relative overflow-hidden bg-brand-navy text-white">
-    <div class="absolute inset-0">
-      <img
-        src="/background.png"
-        alt="Salty Papa's Shrimp House"
-        class="w-full h-full object-cover opacity-15"
-        loading="lazy"
-      />
+  <!-- Gallery -->
+  <section class="py-16 md:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 animate-on-scroll">
+        <p class="text-brand-red font-bold text-xs tracking-[0.3em] uppercase mb-3">From the Dining Room</p>
+        <h2 class="font-display text-2xl md:text-3xl font-bold text-brand-navy">A Look Inside</h2>
+        <div class="divider-teal mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        {galleryImages.map((image, i) => (
+          <div class={`img-zoom rounded-2xl overflow-hidden shadow-md animate-on-scroll delay-${(i % 4) + 1} ${i === 0 ? 'col-span-2 md:col-span-1 row-span-2' : ''}`}>
+            <img
+              src={image.src}
+              alt={image.alt}
+              class={`w-full object-cover ${i === 0 ? 'h-64 md:h-full' : 'h-32 md:h-44'}`}
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </div>
     </div>
-    <div class="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-10">
+  </section>
+
+  <!-- Hours, Location & Map -->
+  <section class="relative overflow-hidden bg-brand-navy text-white">
+    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-20">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         <div class="animate-on-scroll">
-          <h3 class="text-brand-gold font-display font-bold mb-1">Hours</h3>
-          <p class="text-white/80">Open Daily</p>
-          <p class="text-white font-semibold text-lg">11am – 8:30pm</p>
+          <p class="text-brand-gold font-bold text-xs tracking-[0.3em] uppercase mb-3">Come On By</p>
+          <h2 class="font-display text-2xl md:text-3xl font-bold mb-6">Hours &amp; Location</h2>
+
+          <div class="space-y-5">
+            <div class="flex gap-4 items-start">
+              <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-bold mb-0.5">Open Daily</h3>
+                <p class="text-white/70">11:00 AM – 8:30 PM</p>
+                <p class="text-white/40 text-xs mt-0.5">Seating ends at 8:30 PM</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-bold mb-0.5">Address</h3>
+                <p class="text-white/70">15271 McGregor Blvd, Suite 1</p>
+                <p class="text-white/70">Fort Myers, FL 33908</p>
+              </div>
+            </div>
+
+            <div class="flex gap-4 items-start">
+              <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-brand-teal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-display font-bold mb-0.5">Phone</h3>
+                <a href="tel:+12394827272" class="text-white/70 hover:text-brand-gold transition-colors">(239) 482-7272</a>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://maps.google.com/?q=15271+McGregor+Blvd+Suite+1+Fort+Myers+FL+33908" target="_blank" rel="noopener noreferrer" class="btn-teal inline-block mt-8 px-8 py-3.5">
+            Get Directions
+          </a>
         </div>
+
         <div class="animate-on-scroll">
-          <h3 class="text-brand-gold font-display font-bold mb-1">Location</h3>
-          <p class="text-white/80">15271 McGregor Blvd, Suite 1</p>
-          <p class="text-white/80">Fort Myers, FL 33908</p>
-        </div>
-        <div class="animate-on-scroll">
-          <h3 class="text-brand-gold font-display font-bold mb-1">Phone</h3>
-          <a href="tel:+12394827272" class="text-white font-semibold text-lg hover:text-brand-gold transition-colors">(239) 482-7272</a>
+          <div class="rounded-2xl overflow-hidden shadow-2xl h-[320px] md:h-[400px]">
+            <iframe
+              title="Salty Papa's Shrimp House location map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3578.5!2d-81.9!3d26.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s15271+McGregor+Blvd+Fort+Myers+FL!5e0!3m2!1sen!2sus!4v1"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="w-full h-full"
+            ></iframe>
+          </div>
         </div>
       </div>
-      <div class="text-center animate-on-scroll">
-        <a href="/contact" class="btn-primary bg-brand-red px-8 py-3.5">Get Directions</a>
+    </div>
+  </section>
+
+  <!-- Order Online CTA -->
+  <section class="bg-brand-red py-14 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white animate-on-scroll">
+      <h2 class="font-display text-2xl md:text-3xl font-bold mb-3">Craving Salty Papa's?</h2>
+      <p class="text-white/80 mb-8 max-w-lg mx-auto">
+        Order online for pickup, or give us a call — we'll have it ready and waiting for you.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3 justify-center">
+        <a href="https://rebu.delivery" target="_blank" rel="noopener noreferrer" class="inline-block bg-white text-brand-red font-semibold px-8 py-3.5 rounded-lg hover:bg-brand-cream transition-colors duration-200 text-sm">
+          Order Online
+        </a>
+        <a href="tel:+12394827272" class="btn-outline px-8 py-3.5">
+          Call (239) 482-7272
+        </a>
       </div>
     </div>
   </section>
