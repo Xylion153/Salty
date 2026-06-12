@@ -36,7 +36,9 @@ const featuredDishes = [
 const galleryImages = [
   { src: '/shrimp-grits.png', alt: "Papa's Famous Shrimp and Grits" },
   { src: '/bacon-shrimp.png', alt: 'Bacon Wrapped Shrimp with fries and slaw' },
+  { src: '/oysters.jpg', alt: 'Fresh Gulf oysters on the half shell with lemon' },
   { src: '/poboy.png', alt: "Jumbo Shrimp Po' Boy with hush puppies" },
+  { src: '/friedgreen.jpg', alt: 'Fried green tomatoes with blue cheese dressing' },
   { src: '/gatortail.png', alt: 'Louisiana Gator Tail with remoulade' },
   { src: '/margarita.png', alt: 'The Salty Papa Margarita' },
   { src: '/background.png', alt: "Salty Papa's Shrimp House menu spread" },
@@ -189,22 +191,28 @@ const galleryImages = [
         <div class="divider-teal mx-auto mt-4"></div>
       </div>
 
-      <div class="space-y-5 text-white/75 leading-relaxed text-base md:text-lg max-w-3xl mx-auto text-center animate-on-scroll">
-        <p>
-          Long before there was a restaurant, there was just Papa — raised around boatyards and
-          docks, where the day's catch came straight off the water and onto the table, no
-          shortcuts allowed. He grew up believing a meal was only as good as what went into it,
-          and he never let anyone forget it.
-        </p>
-        <p>
-          When his family decided to open a place of their own, they built it around the same
-          handful of rules Papa always lived by. Those rules are still the backbone of this
-          kitchen today.
-        </p>
-        <p class="font-display italic text-brand-gold text-lg md:text-xl pt-2">
-          "Feed people something real, made with care, and they'll always come back —
-          every plate should feel like a celebration."
-        </p>
+      <div class="grid grid-cols-1 md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr] gap-10 md:gap-14 items-center">
+        <div class="flex justify-center animate-on-scroll">
+          <img src="/papa.jpg" alt="The real Salty Papa — fishing the Gulf waters with his dog" class="w-48 md:w-full h-auto drop-shadow-2xl" loading="lazy" />
+        </div>
+
+        <div class="space-y-5 text-white/75 leading-relaxed text-base md:text-lg animate-on-scroll">
+          <p>
+            Long before there was a restaurant, there was just Papa — raised around boatyards and
+            docks, where the day's catch came straight off the water and onto the table, no
+            shortcuts allowed. He grew up believing a meal was only as good as what went into it,
+            and he never let anyone forget it.
+          </p>
+          <p>
+            When his family decided to open a place of their own, they built it around the same
+            handful of rules Papa always lived by. Those rules are still the backbone of this
+            kitchen today.
+          </p>
+          <p class="font-display italic text-brand-gold text-lg md:text-xl pt-2">
+            "Feed people something real, made with care, and they'll always come back —
+            every plate should feel like a celebration."
+          </p>
+        </div>
       </div>
 
       <!-- Polaroid photo trio -->
@@ -336,8 +344,8 @@ const galleryImages = [
         {[
           { name: 'Signature Shrimp Dishes', img: '/shrimp-grits.png', href: '/menu#signature-shrimp-dishes', desc: 'Fresh Gulf pink shrimp, prepared a dozen different ways.' },
           { name: "Po' Boys & Sandwiches", img: '/poboy.png', href: '/menu#po-boys-sandwiches', desc: 'Jumbo Gulf shrimp piled high on toasted bread.' },
-          { name: 'Homemade Appetizers', img: '/gatortail.png', href: '/menu#homemade-appetizers', desc: 'Bacon-wrapped shrimp, gator tail, and more scratch-made starters.' },
-          { name: "Fresh Shellfish", img: '/bacon-shrimp.png', href: '/menu#fresh-shellfish', desc: 'Oysters, crab, and Gulf shellfish straight off the boat.' },
+          { name: 'Homemade Appetizers', img: '/friedgreen.jpg', href: '/menu#homemade-appetizers', desc: 'Fried green tomatoes, bacon-wrapped shrimp, gator tail, and more scratch-made starters.' },
+          { name: "Fresh Shellfish", img: '/oysters.jpg', href: '/menu#fresh-shellfish', desc: 'Plump Gulf oysters, hand-shucked and ready to order, raw or fried.' },
           { name: "Papa's Signature Drinks", img: '/margarita.png', href: '/menu#papa-s-signature-drinks', desc: 'Frozen margaritas, rum punch, and fresh fruit cocktails.' },
           { name: 'Fresh Salads & Soups', img: '/background.png', href: '/menu#fresh-salads', desc: 'Crisp Gulf Coast salads and from-scratch soups, made daily.' },
         ].map((cat, i) => (
@@ -426,7 +434,7 @@ const galleryImages = [
 
         <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-2">
           <div class="flex items-center gap-3 mb-3">
-            <img src="/poboy.png" alt="Jumbo Shrimp Po' Boy" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+            <img src="/oysters.jpg" alt="Fresh Gulf oysters on the half shell" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
             <div class="flex gap-0.5 text-yellow-500">
               <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
             </div>
