@@ -2,13 +2,14 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import MobileCTA from '../components/MobileCTA.astro';
 
 interface Props {
   title: string;
   description?: string;
 }
 
-const { title, description = "Where the Bayou Meets the Beach — Fresh Gulf seafood, Cajun spices, and Southern hospitality in Fort Myers, Florida." } = Astro.props;
+const { title, description = "Family-owned seafood restaurant in Fort Myers, FL serving fresh Gulf shrimp, Cajun seafood classics, and scratch-made Southern comfort food daily. Dine-in, takeout & pet-friendly patio." } = Astro.props;
 ---
 
 <!doctype html>
@@ -21,7 +22,7 @@ const { title, description = "Where the Bayou Meets the Beach — Fresh Gulf sea
     <title>{title} | Salty Papa's Shrimp House</title>
     <link rel="icon" type="image/png" href="/logo.png" />
   </head>
-  <body class="flex flex-col min-h-screen">
+  <body class="flex flex-col min-h-screen pb-16 md:pb-0">
     <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 bg-brand-blue text-white px-4 py-2 rounded">
       Skip to main content
     </a>
@@ -30,6 +31,7 @@ const { title, description = "Where the Bayou Meets the Beach — Fresh Gulf sea
       <slot />
     </main>
     <Footer />
+    <MobileCTA />
 
     <!-- Scroll animation observer -->
     <script>
