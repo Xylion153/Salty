@@ -206,6 +206,19 @@ const galleryImages = [
           every plate should feel like a celebration."
         </p>
       </div>
+
+      <!-- Polaroid photo trio -->
+      <div class="hidden sm:flex justify-center items-end gap-6 mt-14 animate-on-scroll">
+        <div class="bg-white p-2.5 pb-4 rounded-lg shadow-xl -rotate-6">
+          <img src="/shrimp-grits.png" alt="Papa's Famous Shrimp and Grits" class="w-28 h-28 object-cover rounded" loading="lazy" />
+        </div>
+        <div class="bg-white p-2.5 pb-4 rounded-lg shadow-xl rotate-2 -translate-y-2">
+          <img src="/bacon-shrimp.png" alt="Bacon Wrapped Shrimp" class="w-32 h-32 object-cover rounded" loading="lazy" />
+        </div>
+        <div class="bg-white p-2.5 pb-4 rounded-lg shadow-xl rotate-6">
+          <img src="/gatortail.png" alt="Louisiana Gator Tail" class="w-28 h-28 object-cover rounded" loading="lazy" />
+        </div>
+      </div>
     </div>
   </section>
 
@@ -326,6 +339,7 @@ const galleryImages = [
           { name: 'Homemade Appetizers', img: '/gatortail.png', href: '/menu#homemade-appetizers', desc: 'Bacon-wrapped shrimp, gator tail, and more scratch-made starters.' },
           { name: "Fresh Shellfish", img: '/bacon-shrimp.png', href: '/menu#fresh-shellfish', desc: 'Oysters, crab, and Gulf shellfish straight off the boat.' },
           { name: "Papa's Signature Drinks", img: '/margarita.png', href: '/menu#papa-s-signature-drinks', desc: 'Frozen margaritas, rum punch, and fresh fruit cocktails.' },
+          { name: 'Fresh Salads & Soups', img: '/background.png', href: '/menu#fresh-salads', desc: 'Crisp Gulf Coast salads and from-scratch soups, made daily.' },
         ].map((cat, i) => (
           <a
             href={cat.href}
@@ -398,8 +412,11 @@ const galleryImages = [
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
         <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-1">
-          <div class="flex gap-0.5 mb-3 text-yellow-500">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          <div class="flex items-center gap-3 mb-3">
+            <img src="/shrimp-grits.png" alt="Papa's Famous Shrimp and Grits" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+            <div class="flex gap-0.5 text-yellow-500">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
           </div>
           <p class="text-gray-600 leading-relaxed mb-4 italic text-sm">
             "Best shrimp &amp; grits I've ever had outside of New Orleans. The andouille cream sauce is incredible. Hidden gem on McGregor!"
@@ -408,8 +425,11 @@ const galleryImages = [
         </div>
 
         <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-2">
-          <div class="flex gap-0.5 mb-3 text-yellow-500">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          <div class="flex items-center gap-3 mb-3">
+            <img src="/poboy.png" alt="Jumbo Shrimp Po' Boy" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+            <div class="flex gap-0.5 text-yellow-500">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
           </div>
           <p class="text-gray-600 leading-relaxed mb-4 italic text-sm">
             "Finally a seafood place that takes allergies seriously! My daughter with celiac could eat safely. We'll be regulars."
@@ -418,8 +438,11 @@ const galleryImages = [
         </div>
 
         <div class="bg-white rounded-2xl p-6 shadow-sm animate-on-scroll delay-3">
-          <div class="flex gap-0.5 mb-3 text-yellow-500">
-            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          <div class="flex items-center gap-3 mb-3">
+            <img src="/margarita.png" alt="The Salty Papa Margarita" class="w-12 h-12 rounded-full object-cover flex-shrink-0" loading="lazy" />
+            <div class="flex gap-0.5 text-yellow-500">
+              <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+            </div>
           </div>
           <p class="text-gray-600 leading-relaxed mb-4 italic text-sm">
             "The rum punch alone is worth the trip. Great food, awesome vibe, and they let us bring our dog on the patio. Perfect Florida evening."
@@ -582,6 +605,12 @@ const galleryImages = [
   <!-- Order Online CTA -->
   <section class="bg-brand-red py-14 md:py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white animate-on-scroll">
+      <div class="flex justify-center -space-x-3 mb-6">
+        <img src="/shrimp-grits.png" alt="" aria-hidden="true" class="w-14 h-14 rounded-full object-cover ring-4 ring-brand-red shadow-lg" loading="lazy" />
+        <img src="/bacon-shrimp.png" alt="" aria-hidden="true" class="w-14 h-14 rounded-full object-cover ring-4 ring-brand-red shadow-lg" loading="lazy" />
+        <img src="/poboy.png" alt="" aria-hidden="true" class="w-14 h-14 rounded-full object-cover ring-4 ring-brand-red shadow-lg" loading="lazy" />
+        <img src="/margarita.png" alt="" aria-hidden="true" class="w-14 h-14 rounded-full object-cover ring-4 ring-brand-red shadow-lg" loading="lazy" />
+      </div>
       <h2 class="font-display text-2xl md:text-3xl font-bold mb-3">Craving Salty Papa's?</h2>
       <p class="text-white/80 mb-8 max-w-lg mx-auto">
         Order online for pickup, or give us a call — we'll have it ready and waiting for you.
